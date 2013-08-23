@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Window xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="MediaPortalWindow">
+<Window xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="PlayerWindow">
   <IsDefault>false</IsDefault>
   <Width>1280</Width>
   <Height>720</Height>
-  <Name>TVSeries</Name>
-  <Id>18</Id>
+  <Name>MovingPicturesPlaying</Name>
+  <Id>23</Id>
   <BackgroundBrush />
   <WindowAnimations />
   <WindowControls>
     <Control x:type="Group">
-      <Name>Main Window</Name>
+      <Name>Playing Screen</Name>
       <Id>1</Id>
       <Width>1280</Width>
       <Height>720</Height>
@@ -29,9 +29,9 @@
           <ImageStyle>
             <BorderThickness>0,0,0,0</BorderThickness>
             <CornerRadius>0,0,0,0</CornerRadius>
-            <BackgroundBrush x:type="ImageBrush" Image="\Hovers\hover_my tv series.jpg" Stretch="Fill" />
+            <BackgroundBrush x:type="ImageBrush" Image="\Hovers\hover_moving pictures.jpg" Stretch="Fill" />
           </ImageStyle>
-          <Image>#MPD2.fanart.TVSeries</Image>
+          <Image>#MPD2.fanart.MovingPictures</Image>
           <ImageStretch>Fill</ImageStretch>
           <CoverImage x:type="ImageBrush" Image="\movingpics_overlay.png" Stretch="Fill" />
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
@@ -39,149 +39,220 @@
         <Control x:type="Label">
           <Name>Title</Name>
           <Id>3</Id>
-          <Width>493</Width>
-          <Height>60</Height>
-          <PosX>312</PosX>
-          <PosY>428</PosY>
-          <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
-          <Animations />
-          <MediaPortalFocusControls />
-          <LabelStyle StyleId="FluidBody50 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
-          <LabelText>#selecteditem</LabelText>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
-          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
-        </Control>
-        <Control x:type="Image">
-          <Name>SelectedThumb</Name>
-          <Id>4</Id>
-          <Width>317</Width>
-          <Height>447</Height>
-          <PosX>10</PosX>
-          <PosY>209</PosY>
-          <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
-          <Animations />
-          <MediaPortalFocusControls />
-          <ImageStyle StyleId="VideoCover" />
-          <Image>#TV.RecordedTV.thumb</Image>
-          <ImageStretch>Uniform</ImageStretch>
-          <ImageMargin>-20,-20,-20,-20</ImageMargin>
-          <CoverImage x:type="ImageBrush" Image="\round.poster.frame.png" Stretch="Fill" />
-          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
-        </Control>
-        <Control x:type="List">
-          <Name>List</Name>
-          <Id>29</Id>
           <Width>1280</Width>
-          <Height>297</Height>
+          <Height>90</Height>
           <PosY>422</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <ListControlStyle StyleId="empty" />
-          <ListType>MediaPortalListControl</ListType>
-          <ListLayout>Auto</ListLayout>
-          <VerticalItemStyle StyleId="Vertical low" />
-          <HorizontalItemStyle StyleId="Horizontal low" />
-          <CoverFlowItemStyle StyleId="Coverflow low" />
-        </Control>
-        <Control x:type="Image">
-          <Name>Star Image</Name>
-          <Id>30</Id>
-          <Width>282</Width>
-          <Height>21</Height>
-          <PosX>18</PosX>
-          <PosY>640</PosY>
-          <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
-          <Animations />
-          <MediaPortalFocusControls />
-          <ImageStyle StyleId="Logo_Image" />
-          <Image>\Logos\TVSeries\+#TVSeries.Series.FiveStarPath+.png</Image>
-          <ImageStretch>Fill</ImageStretch>
-          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
-        </Control>
-        <Control x:type="Label">
-          <Name>Rating Label</Name>
-          <Id>31</Id>
-          <Width>282</Width>
-          <Height>40</Height>
-          <PosX>18</PosX>
-          <PosY>664</PosY>
-          <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
-          <Animations />
-          <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid30 White">
+          <LabelStyle StyleId="Fluid80 White">
             <FontSize>20</FontSize>
           </LabelStyle>
-          <LabelText> +#MPD2.TVSeries.Rating</LabelText>
-          <LabelTextAlignment>Center</LabelTextAlignment>
+          <LabelText>#MovingPictures.SelectedMovie.title</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
         </Control>
         <Control x:type="Label">
-          <Name>Summary</Name>
-          <Id>32</Id>
-          <Width>491</Width>
-          <Height>199</Height>
-          <PosX>314</PosX>
-          <PosY>510</PosY>
-          <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Name>Resolution Label</Name>
+          <Id>4</Id>
+          <Width>280</Width>
+          <Height>40</Height>
+          <PosX>6</PosX>
+          <PosY>509</PosY>
+          <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <LabelStyle StyleId="Fluid30 White">
             <FontSize>20</FontSize>
           </LabelStyle>
-          <LabelText>#MovingPictures.SelectedMovie.summary</LabelText>
-          <IsVertical>true</IsVertical>
+          <LabelText>@Resolution+:</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollDelay>2</ScrollDelay>
-          <ScrollSpeed>6</ScrollSpeed>
+          <ScrollSpeed>2</ScrollSpeed>
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
-          <ScrollSeperator>-------------------------------------</ScrollSeperator>
+        </Control>
+        <Control x:type="Label">
+          <Name>Resolution</Name>
+          <Id>5</Id>
+          <Width>318</Width>
+          <Height>40</Height>
+          <PosX>288</PosX>
+          <PosY>509</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="Fluid30 White">
+            <FontSize>20</FontSize>
+          </LabelStyle>
+          <LabelText>#MovingPictures.LocalMedia.videowidth+ x +#MovingPictures.LocalMedia.videoheight</LabelText>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="Label">
+          <Name>FPS Label</Name>
+          <Id>6</Id>
+          <Width>280</Width>
+          <Height>40</Height>
+          <PosX>6</PosX>
+          <PosY>564</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="Fluid30 White">
+            <FontSize>20</FontSize>
+          </LabelStyle>
+          <LabelText>@FPS+:</LabelText>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="Label">
+          <Name>FPS</Name>
+          <Id>7</Id>
+          <Width>318</Width>
+          <Height>40</Height>
+          <PosX>288</PosX>
+          <PosY>564</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="Fluid30 White">
+            <FontSize>20</FontSize>
+          </LabelStyle>
+          <LabelText>#MovingPictures.LocalMedia.videoframerate</LabelText>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="ProgressBar">
+          <Name>ProgressBar</Name>
+          <Id>8</Id>
+          <Width>649</Width>
+          <Height>50</Height>
+          <PosX>313</PosX>
+          <PosY>654</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ProgressBarStyle StyleId="default" />
+          <ProgressValue>#percentage</ProgressValue>
+        </Control>
+        <Control x:type="Label">
+          <Name>Playtime</Name>
+          <Id>9</Id>
+          <Width>321</Width>
+          <Height>90</Height>
+          <PosY>626</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="Fluid80 White">
+            <FontSize>20</FontSize>
+          </LabelStyle>
+          <LabelText>#currentplaytime</LabelText>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="Label">
+          <Name>currentremaining</Name>
+          <Id>10</Id>
+          <Width>321</Width>
+          <Height>90</Height>
+          <PosX>955</PosX>
+          <PosY>626</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="Fluid80 White">
+            <FontSize>20</FontSize>
+          </LabelStyle>
+          <LabelText>#currentremaining</LabelText>
+          <LabelTextAlignment>Right</LabelTextAlignment>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
         </Control>
         <Control x:type="Image">
-          <Name>Watched Icon</Name>
-          <Id>33</Id>
-          <Width>40</Width>
-          <Height>40</Height>
-          <PosX>253</PosX>
-          <PosY>265</PosY>
+          <Name>Video Codec</Name>
+          <Id>11</Id>
+          <Width>125</Width>
+          <Height>85</Height>
+          <PosY>332</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <ImageStyle StyleId="Logo_Image" />
-          <Image>#StreamedMP.Icons.Watched+.png</Image>
-          <ImageStretch>Uniform</ImageStretch>
+          <Image>\Logos\+#MovingPictures.LocalMedia.videocodec+.png</Image>
+          <ImageStretch>Fill</ImageStretch>
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
         </Control>
         <Control x:type="Image">
-          <Name>Watched Icon</Name>
-          <Id>34</Id>
-          <Width>40</Width>
-          <Height>40</Height>
-          <PosX>253</PosX>
-          <PosY>265</PosY>
+          <Name>Video Resolution</Name>
+          <Id>12</Id>
+          <Width>125</Width>
+          <Height>85</Height>
+          <PosX>125</PosX>
+          <PosY>332</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <ImageStyle StyleId="Logo_Image" />
-          <Image>#StreamedMP.Icons.UnWatched+.png</Image>
-          <ImageStretch>Uniform</ImageStretch>
+          <Image>\Logos\+#MovingPictures.LocalMedia.videoresolution+.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Image">
+          <Name>Video Aspect Ratio</Name>
+          <Id>13</Id>
+          <Width>125</Width>
+          <Height>85</Height>
+          <PosX>250</PosX>
+          <PosY>332</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\Logos\+#MovingPictures.LocalMedia.videoaspectratio+.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Image">
+          <Name>Audio Codec</Name>
+          <Id>14</Id>
+          <Width>125</Width>
+          <Height>85</Height>
+          <PosX>375</PosX>
+          <PosY>332</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\Logos\+#MovingPictures.LocalMedia.audiocodec+.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Image">
+          <Name>Audio Channels</Name>
+          <Id>15</Id>
+          <Width>125</Width>
+          <Height>85</Height>
+          <PosX>500</PosX>
+          <PosY>332</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\Logos\+#MovingPictures.LocalMedia.audiochannels+.png</Image>
+          <ImageStretch>Fill</ImageStretch>
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
         </Control>
       </GroupControls>
     </Control>
     <Control x:type="Group">
       <Name>UpperBar</Name>
-      <Id>19</Id>
+      <Id>23</Id>
       <Width>509</Width>
       <Height>58</Height>
       <PosX>290</PosX>
@@ -199,17 +270,17 @@
       <GroupControls>
         <Control x:type="Label">
           <Name>Window</Name>
-          <Id>20</Id>
+          <Id>24</Id>
           <Width>493</Width>
           <Height>50</Height>
           <PosY>-6</PosY>
-          <VisibleCondition />
+          <VisibleCondition>IsControlVisible(9)</VisibleCondition>
           <Animations />
           <MediaPortalFocusControls />
           <LabelStyle StyleId="Fluid40 White">
             <FontSize>20</FontSize>
           </LabelStyle>
-          <LabelText>#TVSeries.CurrentView</LabelText>
+          <LabelText>#MovingPictures.SelectedNode.name</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -219,7 +290,7 @@
     </Control>
     <Control x:type="Group">
       <Name>Time / Weather</Name>
-      <Id>21</Id>
+      <Id>16</Id>
       <Width>1280</Width>
       <Height>720</Height>
       <VisibleCondition />
@@ -229,7 +300,7 @@
       <GroupControls>
         <Control x:type="Image">
           <Name>Clock BG</Name>
-          <Id>22</Id>
+          <Id>17</Id>
           <Width>297</Width>
           <Height>72</Height>
           <VisibleCondition />
@@ -242,7 +313,7 @@
         </Control>
         <Control x:type="Label">
           <Name>Time</Name>
-          <Id>23</Id>
+          <Id>18</Id>
           <Width>188</Width>
           <Height>70</Height>
           <PosX>96</PosX>
@@ -261,7 +332,7 @@
         </Control>
         <Control x:type="Image">
           <Name>WorldWeatherBG</Name>
-          <Id>24</Id>
+          <Id>19</Id>
           <Width>306</Width>
           <Height>76</Height>
           <PosX>975</PosX>
@@ -276,7 +347,7 @@
         </Control>
         <Control x:type="Image">
           <Name>Weather Icon Today</Name>
-          <Id>25</Id>
+          <Id>20</Id>
           <Width>51</Width>
           <Height>43</Height>
           <PosX>1003</PosX>
@@ -292,7 +363,7 @@
         </Control>
         <Control x:type="Label">
           <Name>Current Temp</Name>
-          <Id>26</Id>
+          <Id>21</Id>
           <Width>196</Width>
           <Height>50</Height>
           <PosX>1069</PosX>
@@ -312,82 +383,12 @@
         </Control>
       </GroupControls>
     </Control>
-    <Control x:type="Group">
-      <Name>Action Menu</Name>
-      <Id>27</Id>
-      <Width>336</Width>
-      <Height>644</Height>
-      <PosX>1280</PosX>
-      <PosY>43</PosY>
-      <VisibleCondition>IsMediaPortalControlFocused(2) || IsMediaPortalControlFocused(3) || IsMediaPortalControlFocused(4) || IsMediaPortalControlFocused(5) || IsMediaPortalControlFocused(9) || IsMediaPortalControlFocused(20) || IsMediaPortalControlFocused(2) || IsMediaPortalControlFocused(66608) || IsMediaPortalControlFocused(66609) || IsMediaPortalControlFocused(66610)</VisibleCondition>
-      <IsWindowOpenVisible>false</IsWindowOpenVisible>
-      <Animations>
-        <Animation x:type="Slide" Condition="VisibleTrue" Duration="300" Easing="EaseOut" StartX="1280" StartY="43" EndX="944" EndY="43" />
-        <Animation x:type="Slide" Condition="VisibleFalse" Duration="300" Delay="200" Easing="EaseIn" StartX="944" StartY="43" EndX="1280" EndY="43" />
-      </Animations>
-      <MediaPortalFocusControls />
-      <GroupStyle StyleId="ActionMenu BG" />
-      <GroupControls>
-        <Control x:type="List">
-          <Name>List</Name>
-          <Id>28</Id>
-          <Width>310</Width>
-          <Height>625</Height>
-          <PosX>17</PosX>
-          <PosY>10</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <ListControlStyle StyleId="empty" />
-          <ListType>MediaPortalButtonGroup</ListType>
-          <ListLayout>Auto</ListLayout>
-          <VerticalItemStyle StyleId="ActionMenu" />
-          <HorizontalItemStyle>
-            <BorderThickness>1,1,1,1</BorderThickness>
-            <CornerRadius>4,4,4,4</CornerRadius>
-            <NoFocusBrush x:type="ColorBrush" Color="#FF000000" />
-            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
-            <FocusBrush x:type="ColorBrush" Color="#FF00BFFF" />
-            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
-            <FontSize>18</FontSize>
-            <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
-            <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
-            <LabelMargin>3,3,3,3</LabelMargin>
-            <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
-            <EnableImage>true</EnableImage>
-            <ImageMargin>3,3,3,33</ImageMargin>
-            <ImageVerticalAlignment>Top</ImageVerticalAlignment>
-            <Width>135</Width>
-            <Height>207</Height>
-            <ItemMargin>1,1,1,1</ItemMargin>
-          </HorizontalItemStyle>
-          <CoverFlowItemStyle>
-            <BorderThickness>1,1,1,1</BorderThickness>
-            <CornerRadius>4,4,4,4</CornerRadius>
-            <NoFocusBrush x:type="ColorBrush" Color="#FF000000" />
-            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
-            <FocusBrush x:type="ColorBrush" Color="#FF00BFFF" />
-            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
-            <FontSize>18</FontSize>
-            <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
-            <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
-            <LabelMargin>3,3,3,3</LabelMargin>
-            <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
-            <EnableImage>true</EnableImage>
-            <ImageMargin>3,3,3,33</ImageMargin>
-            <ImageVerticalAlignment>Top</ImageVerticalAlignment>
-            <Width>135</Width>
-            <Height>207</Height>
-          </CoverFlowItemStyle>
-        </Control>
-      </GroupControls>
-    </Control>
     <Control x:type="Button">
-      <Name>Menu</Name>
-      <Id>37</Id>
+      <Name>PlayMenu</Name>
+      <Id>22</Id>
       <Width>1280</Width>
       <Height>100</Height>
-      <VisibleCondition>IsPlayer(None)</VisibleCondition>
+      <VisibleCondition>!IsPlayer(None)</VisibleCondition>
       <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations />
       <MediaPortalFocusControls />
@@ -408,5 +409,5 @@
       </Actions>
     </Control>
   </WindowControls>
-  <VisibleCondition>IsMediaPortalWindow(9811)</VisibleCondition>
+  <VisibleCondition>IsPlayer(MovingPictures)</VisibleCondition>
 </Window>

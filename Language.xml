@@ -19,7 +19,7 @@
       <Values>
         <LanguageValue Language="Deutsch" Value="Vorhersage" />
         <LanguageValue Language="English" Value="Forecast" />
-        <LanguageValue Language="Francais" Value="Prévision" />>
+        <LanguageValue Language="Francais" Value="Prévision" />
       </Values>
     </LanguageEntry>
     <LanguageEntry Tag="@current">

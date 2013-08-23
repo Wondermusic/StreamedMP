@@ -13,7 +13,7 @@
       <Id>1</Id>
       <Width>1280</Width>
       <Height>720</Height>
-      <VisibleCondition>IsMediaPortalWindow(501) || IsMediaPortalWindow(500) || IsMediaPortalWindow(504)</VisibleCondition>
+      <VisibleCondition>IsMediaPortalWindow(30) || IsMediaPortalWindow(2345) || IsMediaPortalWindow(7890) || IsMediaPortalWindow(25650) || IsMediaPortalWindow(25652) || IsMediaPortalWindow(15634330)</VisibleCondition>
       <Animations />
       <MediaPortalFocusControls />
       <GroupStyle StyleId="Empty" />
@@ -370,80 +370,6 @@
       </GroupControls>
     </Control>
     <Control x:type="Group">
-      <Name>Playing Window</Name>
-      <Id>27</Id>
-      <Width>800</Width>
-      <Height>280</Height>
-      <PosX>265</PosX>
-      <PosY>140</PosY>
-      <VisibleCondition>IsPlayer(Radio) || IsPlayer(RadioTime) || IsPlayer(Streamradio)</VisibleCondition>
-      <IsWindowOpenVisible>false</IsWindowOpenVisible>
-      <Animations />
-      <MediaPortalFocusControls />
-      <GroupStyle>
-        <BorderThickness>0,0,0,0</BorderThickness>
-        <CornerRadius>0,0,0,0</CornerRadius>
-        <BackgroundBrush x:type="ImageBrush" Image="\dialogprogressbg.png" Stretch="Fill" />
-        <BorderBrush />
-        <GlossBrush />
-      </GroupStyle>
-      <GroupControls>
-        <Control x:type="Image">
-          <Name>thumb</Name>
-          <Id>28</Id>
-          <Width>200</Width>
-          <Height>200</Height>
-          <PosX>21</PosX>
-          <PosY>35</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <ImageStyle StyleId="Radio Cover" />
-          <Image>#Play.Current.Thumb</Image>
-          <ImageStretch>Fill</ImageStretch>
-          <ImageCornerRadius>12</ImageCornerRadius>
-          <CoverImage />
-          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
-        </Control>
-        <Control x:type="Label">
-          <Name>Title</Name>
-          <Id>29</Id>
-          <Width>554</Width>
-          <Height>60</Height>
-          <PosX>220</PosX>
-          <PosY>23</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <LabelStyle StyleId="FluidTitle50 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
-          <LabelText>#MPD2.Radio.Title</LabelText>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
-          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
-        </Control>
-        <Control x:type="Label">
-          <Name>Playtime</Name>
-          <Id>30</Id>
-          <Width>364</Width>
-          <Height>50</Height>
-          <PosX>220</PosX>
-          <PosY>70</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
-          <LabelText>#currentplaytime</LabelText>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
-          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
-        </Control>
-      </GroupControls>
-    </Control>
-    <Control x:type="Group">
       <Name>UpperBar</Name>
       <Id>16</Id>
       <Width>509</Width>
@@ -741,31 +667,6 @@
         <Action Action="OpenDialog" Param="903" />
       </Actions>
     </Control>
-    <Control x:type="Button">
-      <Name>PlayMenu</Name>
-      <Id>52</Id>
-      <Width>1280</Width>
-      <Height>100</Height>
-      <VisibleCondition>!IsPlayer(None)</VisibleCondition>
-      <IsWindowOpenVisible>false</IsWindowOpenVisible>
-      <Animations />
-      <MediaPortalFocusControls />
-      <ButtonStyle>
-        <NoFocusBrush />
-        <NoFocusBorderBrush />
-        <FocusBrush />
-        <FocusBorderBrush />
-        <ShadeBrush />
-        <GlossBrush />
-        <EnableLabel>false</EnableLabel>
-        <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
-        <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
-      </ButtonStyle>
-      <LabelText>NewButton</LabelText>
-      <Actions>
-        <Action Action="OpenDialog" Param="903" />
-      </Actions>
-    </Control>
   </WindowControls>
-  <VisibleCondition>IsMediaPortalWindow(30) || IsMediaPortalWindow(2345) || IsMediaPortalWindow(7890) || IsMediaPortalWindow(25650) || IsMediaPortalWindow(25652) || IsMediaPortalWindow(15634330) || IsMediaPortalWindow(25653) || IsPlayer(Radio) || IsPlayer(RadioTime) || IsPlayer(Streamradio)</VisibleCondition>
+  <VisibleCondition>IsMediaPortalWindow(30) || IsMediaPortalWindow(2345) || IsMediaPortalWindow(7890) || IsMediaPortalWindow(25650) || IsMediaPortalWindow(25652) || IsMediaPortalWindow(15634330) || IsMediaPortalWindow(25653)</VisibleCondition>
 </Window>

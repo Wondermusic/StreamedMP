@@ -62,7 +62,7 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <ImageStyle StyleId="Logo_Image" />
+          <ImageStyle />
           <Image>\Settings\Settings text.png</Image>
           <ImageStretch>Uniform</ImageStretch>
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
@@ -115,7 +115,7 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <ImageStyle StyleId="Logo_Image" />
+          <ImageStyle />
           <Image>\Preview.png</Image>
           <ImageStretch>Fill</ImageStretch>
           <ImageCornerRadius>12</ImageCornerRadius>
@@ -131,7 +131,7 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <ImageStyle StyleId="Logo_Image" />
+          <ImageStyle />
           <Image>\Settings\Frame.png</Image>
           <ImageStretch>Uniform</ImageStretch>
           <ImageCornerRadius>10</ImageCornerRadius>
@@ -513,7 +513,7 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <ImageStyle StyleId="Logo_Image" />
+          <ImageStyle />
           <Image>\Settings\Remote text.png</Image>
           <ImageStretch>Uniform</ImageStretch>
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
@@ -838,7 +838,7 @@
                 <EnableImage>true</EnableImage>
                 <ImageStretch>None</ImageStretch>
               </ButtonStyle>
-              <Image>\Remote\topbar_skipback.png</Image>
+              <Image>\Settings\topbar_skipback.png</Image>
               <LabelText>NewButton</LabelText>
               <Actions>
                 <Action Action="MediaPortalAction" Param="ACTION_PREV_ITEM" />
@@ -876,7 +876,7 @@
                 <EnableImage>true</EnableImage>
                 <ImageStretch>None</ImageStretch>
               </ButtonStyle>
-              <Image>\Remote\topbar_play.png</Image>
+              <Image>\Settings\topbar_play.png</Image>
               <LabelText>NewButton</LabelText>
               <Actions>
                 <Action Action="MediaPortalAction" Param="ACTION_PAUSE" />
@@ -915,7 +915,7 @@
                 <EnableImage>true</EnableImage>
                 <ImageStretch>None</ImageStretch>
               </ButtonStyle>
-              <Image>\Remote\topbar_skipforward.png</Image>
+              <Image>\Settings\topbar_skipforward.png</Image>
               <LabelText>NewButton</LabelText>
               <Actions>
                 <Action Action="MediaPortalAction" Param="ACTION_NEXT_ITEM" />
@@ -953,7 +953,7 @@
                 <EnableImage>true</EnableImage>
                 <ImageStretch>None</ImageStretch>
               </ButtonStyle>
-              <Image>\Remote\topbar_rew.png</Image>
+              <Image>\Settings\topbar_rew.png</Image>
               <LabelText>NewButton</LabelText>
               <Actions>
                 <Action Action="MediaPortalAction" Param="ACTION_REWIND" />
@@ -991,7 +991,7 @@
                 <EnableImage>true</EnableImage>
                 <ImageStretch>None</ImageStretch>
               </ButtonStyle>
-              <Image>\Remote\topbar_stop.png</Image>
+              <Image>\Settings\topbar_stop.png</Image>
               <LabelText>NewButton</LabelText>
               <Actions>
                 <Action Action="MediaPortalAction" Param="ACTION_STOP" />
@@ -1067,7 +1067,7 @@
                 <EnableImage>true</EnableImage>
                 <ImageStretch>None</ImageStretch>
               </ButtonStyle>
-              <Image>\Remote\topbar_FF.png</Image>
+              <Image>\Settings\topbar_FF.png</Image>
               <LabelText>NewButton</LabelText>
               <Actions>
                 <Action Action="MediaPortalAction" Param="ACTION_FORWARD" />
@@ -1166,8 +1166,8 @@
               <Animations />
               <MediaPortalFocusControls />
               <ButtonStyle>
-                <NoFocusBrush x:type="ImageBrush" Image="\Remote\up_nf.png" Stretch="Uniform" />
-                <FocusBrush x:type="ImageBrush" Image="\Remote\up_f.png" Stretch="Uniform" />
+                <NoFocusBrush x:type="ImageBrush" Image="\Settings\up_nf.png" Stretch="Uniform" />
+                <FocusBrush x:type="ImageBrush" Image="\Settings\up_f.png" Stretch="Uniform" />
                 <EnableLabel>false</EnableLabel>
                 <FontType>Titan</FontType>
                 <FocusFontBrush x:type="ColorBrush" Color="#FF00FF00" />
@@ -1190,8 +1190,8 @@
               <Animations />
               <MediaPortalFocusControls />
               <ButtonStyle>
-                <NoFocusBrush x:type="ImageBrush" Image="\Remote\down_nf.png" Stretch="Uniform" />
-                <FocusBrush x:type="ImageBrush" Image="\Remote\down_f.png" Stretch="Uniform" />
+                <NoFocusBrush x:type="ImageBrush" Image="\Settings\down_nf.png" Stretch="Uniform" />
+                <FocusBrush x:type="ImageBrush" Image="\Settings\down_f.png" Stretch="Uniform" />
                 <EnableLabel>false</EnableLabel>
                 <FontType>Titan</FontType>
                 <FocusFontBrush x:type="ColorBrush" Color="#FF00FF00" />
@@ -1214,8 +1214,8 @@
               <Animations />
               <MediaPortalFocusControls />
               <ButtonStyle>
-                <NoFocusBrush x:type="ImageBrush" Image="\Remote\left_nf.png" Stretch="Uniform" />
-                <FocusBrush x:type="ImageBrush" Image="\Remote\left_f.png" Stretch="Uniform" />
+                <NoFocusBrush x:type="ImageBrush" Image="\Settings\left_nf.png" Stretch="Uniform" />
+                <FocusBrush x:type="ImageBrush" Image="\Settings\left_f.png" Stretch="Uniform" />
                 <EnableLabel>false</EnableLabel>
                 <FontType>Titan</FontType>
                 <FocusFontBrush x:type="ColorBrush" Color="#FF00FF00" />
@@ -1238,8 +1238,8 @@
               <Animations />
               <MediaPortalFocusControls />
               <ButtonStyle>
-                <NoFocusBrush x:type="ImageBrush" Image="\Remote\right_nf.png" Stretch="Uniform" />
-                <FocusBrush x:type="ImageBrush" Image="\Remote\right_f.png" Stretch="Uniform" />
+                <NoFocusBrush x:type="ImageBrush" Image="\Settings\right_nf.png" Stretch="Uniform" />
+                <FocusBrush x:type="ImageBrush" Image="\Settings\right_f.png" Stretch="Uniform" />
                 <EnableLabel>false</EnableLabel>
                 <FontType>Titan</FontType>
                 <FocusFontBrush x:type="ColorBrush" Color="#FF00FF00" />

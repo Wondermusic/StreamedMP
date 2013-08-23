@@ -13,7 +13,7 @@
       <Id>12</Id>
       <Width>1280</Width>
       <Height>720</Height>
-      <VisibleCondition>IsMediaPortalWindow(501) || IsMediaPortalWindow(500) || IsMediaPortalWindow(504)</VisibleCondition>
+      <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
       <GroupStyle StyleId="Empty" />
@@ -283,31 +283,6 @@
       <Width>1280</Width>
       <Height>100</Height>
       <VisibleCondition>IsPlayer(None)</VisibleCondition>
-      <IsWindowOpenVisible>false</IsWindowOpenVisible>
-      <Animations />
-      <MediaPortalFocusControls />
-      <ButtonStyle>
-        <NoFocusBrush />
-        <NoFocusBorderBrush />
-        <FocusBrush />
-        <FocusBorderBrush />
-        <ShadeBrush />
-        <GlossBrush />
-        <EnableLabel>false</EnableLabel>
-        <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
-        <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
-      </ButtonStyle>
-      <LabelText>NewButton</LabelText>
-      <Actions>
-        <Action Action="OpenDialog" Param="903" />
-      </Actions>
-    </Control>
-    <Control x:type="Button">
-      <Name>PlayMenu</Name>
-      <Id>26</Id>
-      <Width>1280</Width>
-      <Height>100</Height>
-      <VisibleCondition>!IsPlayer(None)</VisibleCondition>
       <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations />
       <MediaPortalFocusControls />

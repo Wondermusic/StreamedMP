@@ -80,5 +80,5 @@
       <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
     </Control>
   </DialogControls>
-  <VisibleCondition>IsMediaPortalDialog(3009)</VisibleCondition>
+  <VisibleCondition>IsMediaPortalDialog(2016)</VisibleCondition>
 </Dialog>
