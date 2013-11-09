@@ -41,31 +41,27 @@
           <Id>3</Id>
           <Width>1280</Width>
           <Height>90</Height>
-          <PosY>422</PosY>
+          <PosY>407</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid80 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid80 White" />
           <LabelText>#MovingPictures.SelectedMovie.title</LabelText>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
+          <ScrollDelay>2</ScrollDelay>
+          <ScrollSpeed>10</ScrollSpeed>
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
         </Control>
         <Control x:type="Label">
           <Name>Resolution Label</Name>
           <Id>4</Id>
           <Width>280</Width>
-          <Height>40</Height>
+          <Height>50</Height>
           <PosX>6</PosX>
           <PosY>509</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid30 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid40 White" />
           <LabelText>@Resolution+:</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -75,15 +71,13 @@
           <Name>Resolution</Name>
           <Id>5</Id>
           <Width>318</Width>
-          <Height>40</Height>
+          <Height>50</Height>
           <PosX>288</PosX>
           <PosY>509</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid30 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid40 White" />
           <LabelText>#MovingPictures.LocalMedia.videowidth+ x +#MovingPictures.LocalMedia.videoheight</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -93,15 +87,13 @@
           <Name>FPS Label</Name>
           <Id>6</Id>
           <Width>280</Width>
-          <Height>40</Height>
+          <Height>50</Height>
           <PosX>6</PosX>
           <PosY>564</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid30 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid40 White" />
           <LabelText>@FPS+:</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -111,15 +103,13 @@
           <Name>FPS</Name>
           <Id>7</Id>
           <Width>318</Width>
-          <Height>40</Height>
+          <Height>50</Height>
           <PosX>288</PosX>
           <PosY>564</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid30 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid40 White" />
           <LabelText>#MovingPictures.LocalMedia.videoframerate</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -147,9 +137,7 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid80 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid80 White" />
           <LabelText>#currentplaytime</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -165,9 +153,7 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid80 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid80 White" />
           <LabelText>#currentremaining</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -277,9 +263,7 @@
           <VisibleCondition>IsControlVisible(9)</VisibleCondition>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid40 White" />
           <LabelText>#MovingPictures.SelectedNode.name</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -292,7 +276,7 @@
       <Name>Time / Weather</Name>
       <Id>16</Id>
       <Width>1280</Width>
-      <Height>720</Height>
+      <Height>100</Height>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
@@ -321,10 +305,8 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid60 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
-          <LabelText>#Time</LabelText>
+          <LabelStyle StyleId="Fluid60 White" />
+          <LabelText>#time</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -336,7 +318,7 @@
           <Width>306</Width>
           <Height>76</Height>
           <PosX>975</PosX>
-          <VisibleCondition>IsPluginEnabled(WorldWeather)</VisibleCondition>
+          <VisibleCondition>IsPluginEnabled(World Weather)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -352,7 +334,7 @@
           <Height>43</Height>
           <PosX>1003</PosX>
           <PosY>17</PosY>
-          <VisibleCondition>IsControlVisible(4)</VisibleCondition>
+          <VisibleCondition>IsControlVisible(19)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -368,13 +350,11 @@
           <Height>50</Height>
           <PosX>1069</PosX>
           <PosY>11</PosY>
-          <VisibleCondition>IsControlVisible(4)</VisibleCondition>
+          <VisibleCondition>IsControlVisible(19)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid40 White" />
           <LabelText>#WorldWeather.TodayTemperature</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>

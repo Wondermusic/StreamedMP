@@ -4,7 +4,7 @@
   <SkinHeight>720</SkinHeight>
   <CurrentStyle>Default</CurrentStyle>
   <CurrentLanguage>Deutsch</CurrentLanguage>
-  <TextEnableScrolling>true</TextEnableScrolling>
+  <TextEnableScrolling>false</TextEnableScrolling>
   <TextHorizontalScrollDelay>3</TextHorizontalScrollDelay>
   <TextHorizontalScrollSpeed>20</TextHorizontalScrollSpeed>
   <TextHorizontalScrollWrap>true</TextHorizontalScrollWrap>
@@ -14,8 +14,8 @@
   <TextVerticalScrollWrap>true</TextVerticalScrollWrap>
   <TextVerticalScrollSeperator>---------------------------------</TextVerticalScrollSeperator>
   <SkinOptions>
-    <SkinOption Name="Vertical" IsEnabled="true" IsPreviewImageEnabled="true" PreviewImage="\Preview_Vertical.png" />
-    <SkinOption Name="Horizontal" IsPreviewImageEnabled="true" PreviewImage="\Preview_Horizontal.png" />
+    <SkinOption Name="Vertical" Group="BasicHome" IsEnabled="true" IsPreviewImageEnabled="true" PreviewImage="\Preview_Vertical.png" />
+    <SkinOption Name="Horizontal" Group="BasicHome" IsPreviewImageEnabled="true" PreviewImage="\Preview_Horizontal.png" />
   </SkinOptions>
   <SkinName>StreamedMP</SkinName>
   <Author>Wondermusic</Author>

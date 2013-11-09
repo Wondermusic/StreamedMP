@@ -70,14 +70,6 @@
       </MediaPortalTags>
     </XmlProperty>
     <XmlProperty>
-      <SkinTag>#Play.Current.VideoCodec.Texture</SkinTag>
-      <PropertyType>Image</PropertyType>
-      <DesignerValue>New....</DesignerValue>
-      <MediaPortalTags>
-        <XmlMediaPortalTag Tag="#Play.Current.VideoCodec.Texture" />
-      </MediaPortalTags>
-    </XmlProperty>
-    <XmlProperty>
       <SkinTag>#Anime3.Episode.Image</SkinTag>
       <PropertyType>Image</PropertyType>
       <DesignerValue>New....</DesignerValue>
@@ -116,14 +108,6 @@
       <MediaPortalTags>
         <XmlMediaPortalTag Tag="#MovingPictures.Backdrop" />
         <XmlMediaPortalTag Tag="#MovingPictures.Backdrop2" />
-      </MediaPortalTags>
-    </XmlProperty>
-    <XmlProperty>
-      <SkinTag>#MovingPictures.SelectedMovie.score.rounded</SkinTag>
-      <PropertyType>Image</PropertyType>
-      <DesignerValue>New....</DesignerValue>
-      <MediaPortalTags>
-        <XmlMediaPortalTag Tag="#MovingPictures.SelectedMovie.score.rounded" />
       </MediaPortalTags>
     </XmlProperty>
     <XmlProperty>
@@ -271,22 +255,6 @@
       </MediaPortalTags>
     </XmlProperty>
     <XmlProperty>
-      <SkinTag>#MovingPictures.LocalMedia.videoaspectratio</SkinTag>
-      <PropertyType>Image</PropertyType>
-      <DesignerValue>16x9</DesignerValue>
-      <MediaPortalTags>
-        <XmlMediaPortalTag Tag="#MovingPictures.LocalMedia.videoaspectratio" />
-      </MediaPortalTags>
-    </XmlProperty>
-    <XmlProperty>
-      <SkinTag>#Play.Current.VideoCodec.Texture</SkinTag>
-      <PropertyType>Image</PropertyType>
-      <DesignerValue>New....</DesignerValue>
-      <MediaPortalTags>
-        <XmlMediaPortalTag Tag="#Play.Current.VideoCodec.Texture" />
-      </MediaPortalTags>
-    </XmlProperty>
-    <XmlProperty>
       <SkinTag>#Emulators2.CurrentItem.grade</SkinTag>
       <PropertyType>Image</PropertyType>
       <DesignerValue>New....</DesignerValue>
@@ -301,14 +269,6 @@
       <MediaPortalTags>
         <XmlMediaPortalTag Tag="#selectedthumb" />
         <XmlMediaPortalTag Tag="#RadioTime.Selected.Logo" />
-      </MediaPortalTags>
-    </XmlProperty>
-    <XmlProperty>
-      <SkinTag>#TVSeries.Series.FiveStarPath</SkinTag>
-      <PropertyType>Image</PropertyType>
-      <DesignerValue>New....</DesignerValue>
-      <MediaPortalTags>
-        <XmlMediaPortalTag Tag="#TVSeries.Series.FiveStarPath" />
       </MediaPortalTags>
     </XmlProperty>
     <XmlProperty>
@@ -381,6 +341,46 @@
       <DesignerValue>75</DesignerValue>
       <MediaPortalTags>
         <XmlMediaPortalTag Tag="#TV.Record.percent1" />
+      </MediaPortalTags>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#Play.Current.VideoCodec.Texture</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>New....</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#Play.Current.VideoCodec.Texture" />
+      </MediaPortalTags>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#Play.Current.VideoCodec.Texture</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>New....</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#Play.Current.VideoCodec.Texture" />
+      </MediaPortalTags>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#MovingPictures.LocalMedia.videoaspectratio</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>16x9</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#MovingPictures.LocalMedia.videoaspectratio" />
+      </MediaPortalTags>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#TVSeries.Series.FiveStarPath</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>New....</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#TVSeries.Series.FiveStarPath" />
+      </MediaPortalTags>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#MovingPictures.SelectedMovie.score.rounded</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>6</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#MovingPictures.SelectedMovie.score.rounded" />
       </MediaPortalTags>
     </XmlProperty>
     <XmlProperty>
@@ -1331,19 +1331,19 @@
       </MediaPortalTags>
     </XmlProperty>
     <XmlProperty>
-      <SkinTag>#Date</SkinTag>
+      <SkinTag>#date</SkinTag>
       <PropertyType>Label</PropertyType>
       <DesignerValue>25.03.2013</DesignerValue>
       <MediaPortalTags>
-        <XmlMediaPortalTag Tag="#Date" />
+        <XmlMediaPortalTag Tag="#date" />
       </MediaPortalTags>
     </XmlProperty>
     <XmlProperty>
-      <SkinTag>#Time</SkinTag>
+      <SkinTag>#time</SkinTag>
       <PropertyType>Label</PropertyType>
       <DesignerValue>20:15</DesignerValue>
       <MediaPortalTags>
-        <XmlMediaPortalTag Tag="#Time" />
+        <XmlMediaPortalTag Tag="#time" />
       </MediaPortalTags>
     </XmlProperty>
     <XmlProperty>
@@ -1455,8 +1455,8 @@
       <PropertyType>Label</PropertyType>
       <DesignerValue>8,6</DesignerValue>
       <MediaPortalTags>
-        <XmlMediaPortalTag Tag="#TVSeries.Episode.InfoPanelLine1Value" />
-        <XmlMediaPortalTag Tag="#TVSeries.Series.InfoPanelLine1Value" />
+        <XmlMediaPortalTag Tag="#TVSeries.Series.Rating" />
+        <XmlMediaPortalTag Tag="#TVSeries.Episode.Rating" />
       </MediaPortalTags>
     </XmlProperty>
     <XmlProperty>
@@ -2038,6 +2038,54 @@
       <DesignerValue>Winterfell</DesignerValue>
       <MediaPortalTags>
         <XmlMediaPortalTag Tag="#TVSeries.Episode.LocalEpisodeName" />
+      </MediaPortalTags>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#OnlineVideos.desc</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... </DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#OnlineVideos.desc" />
+      </MediaPortalTags>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#WorldWeather.Location</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>Wuppertal, DEU</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#WorldWeather.Location" />
+      </MediaPortalTags>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#Dialog.Label7</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>New....</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#Dialog.Label7" />
+      </MediaPortalTags>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#Dialog.Label8</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>New....</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#Dialog.Label8" />
+      </MediaPortalTags>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#Dialog.Label9</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>New....</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#Dialog.Label9" />
+      </MediaPortalTags>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#Dialog.Label10</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>New....</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#Dialog.Label10" />
       </MediaPortalTags>
     </XmlProperty>
   </Properties>

@@ -47,8 +47,9 @@
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <ImageStyle StyleId="Music Cover" />
-          <Image>#Play.Current.Thumb</Image>
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>#selectedthumb</Image>
+          <DefaultImage>\spotify_logo.png</DefaultImage>
           <ImageStretch>Uniform</ImageStretch>
           <ImageCornerRadius>12</ImageCornerRadius>
           <CoverImage />
@@ -60,7 +61,8 @@
           <Width>1280</Width>
           <Height>490</Height>
           <PosY>221</PosY>
-          <VisibleCondition />
+          <VisibleCondition>IsMediaPortalControlFocused(200) || IsMediaPortalControlFocused(300)</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
           <ListControlStyle StyleId="empty" />
@@ -94,7 +96,7 @@
             <FontSize>35</FontSize>
             <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
             <NoFocusFontBrush x:type="ColorBrush" Color="#FF00B7FF" />
-            <LabelMargin>10,0,0,0</LabelMargin>
+            <LabelMargin>20,0,20,0</LabelMargin>
             <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
             <ImageMargin>3,3,3,3</ImageMargin>
             <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
@@ -171,9 +173,7 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid40 White" />
           <LabelText>#Rockstar.SelectedTrack.AlbumName+ | +#Rockstar.CurrentModule</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -186,7 +186,7 @@
       <Name>Time / Weather</Name>
       <Id>4</Id>
       <Width>1280</Width>
-      <Height>720</Height>
+      <Height>100</Height>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
@@ -215,10 +215,8 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid60 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
-          <LabelText>#Time</LabelText>
+          <LabelStyle StyleId="Fluid60 White" />
+          <LabelText>#time</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -230,7 +228,7 @@
           <Width>306</Width>
           <Height>76</Height>
           <PosX>975</PosX>
-          <VisibleCondition>IsPluginEnabled(WorldWeather)</VisibleCondition>
+          <VisibleCondition>IsPluginEnabled(World Weather)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -246,7 +244,7 @@
           <Height>43</Height>
           <PosX>1003</PosX>
           <PosY>17</PosY>
-          <VisibleCondition>IsControlVisible(4)</VisibleCondition>
+          <VisibleCondition>IsControlVisible(7)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -262,13 +260,11 @@
           <Height>50</Height>
           <PosX>1069</PosX>
           <PosY>11</PosY>
-          <VisibleCondition>IsControlVisible(4)</VisibleCondition>
+          <VisibleCondition>IsControlVisible(7)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid40 White" />
           <LabelText>#WorldWeather.TodayTemperature</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>

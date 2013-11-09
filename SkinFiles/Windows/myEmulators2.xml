@@ -47,9 +47,7 @@
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="FluidBody50 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="FluidBody50 White" />
           <LabelText>#selecteditem</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -58,31 +56,49 @@
         <Control x:type="Image">
           <Name>Cover</Name>
           <Id>16</Id>
-          <Width>317</Width>
-          <Height>447</Height>
-          <PosX>10</PosX>
-          <PosY>209</PosY>
+          <Width>275</Width>
+          <Height>408</Height>
+          <PosX>31</PosX>
+          <PosY>208</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <ImageStyle StyleId="VideoCover" />
+          <ImageStyle StyleId="Logo_Image" />
           <Image>#Emulators2.CurrentItem.coverpath</Image>
-          <ImageStretch>Uniform</ImageStretch>
-          <CoverImage x:type="ImageBrush" Image="\round.poster.frame.png" Stretch="Fill" />
+          <DefaultImage>\defaultVideo.png</DefaultImage>
+          <ImageStretch>Fill</ImageStretch>
+          <ImageCornerRadius>7</ImageCornerRadius>
+          <CoverImage />
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Image">
+          <Name>Cover</Name>
+          <Id>22</Id>
+          <Width>315</Width>
+          <Height>447</Height>
+          <PosX>10</PosX>
+          <PosY>188</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\round.poster.frame.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverImage />
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
         </Control>
         <Control x:type="Image">
           <Name>Star Image</Name>
           <Id>17</Id>
-          <Width>282</Width>
-          <Height>21</Height>
+          <Width>230</Width>
+          <Height>44</Height>
           <PosX>18</PosX>
           <PosY>640</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <ImageStyle StyleId="Logo_Image" />
-          <Image>\Logos\TVSeries\+#Emulators2.CurrentItem.grade+.png</Image>
+          <Image>\Logos\Stars\star+#Emulators2.CurrentItem.grade+.png</Image>
           <ImageStretch>Fill</ImageStretch>
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
         </Control>
@@ -92,13 +108,11 @@
           <Width>282</Width>
           <Height>40</Height>
           <PosX>18</PosX>
-          <PosY>664</PosY>
+          <PosY>679</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid30 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid30 White" />
           <LabelText>#Emulators2.CurrentItem.grade</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -114,9 +128,7 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid30 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid30 White" />
           <LabelText>#Emulators2.CurrentItem.description</LabelText>
           <IsVertical>true</IsVertical>
           <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -170,9 +182,7 @@
           <VisibleCondition>!IsPlayer(mvCentral)</VisibleCondition>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid40 White" />
           <LabelText>#Emulators2.CurrentItem.emulatortitle</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -185,7 +195,7 @@
       <Name>Time / Weather</Name>
       <Id>4</Id>
       <Width>1280</Width>
-      <Height>720</Height>
+      <Height>100</Height>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
@@ -214,10 +224,8 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid60 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
-          <LabelText>#Time</LabelText>
+          <LabelStyle StyleId="Fluid60 White" />
+          <LabelText>#time</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -229,7 +237,7 @@
           <Width>306</Width>
           <Height>76</Height>
           <PosX>975</PosX>
-          <VisibleCondition>IsPluginEnabled(WorldWeather)</VisibleCondition>
+          <VisibleCondition>IsPluginEnabled(World Weather)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -245,7 +253,7 @@
           <Height>43</Height>
           <PosX>1003</PosX>
           <PosY>17</PosY>
-          <VisibleCondition>IsControlVisible(4)</VisibleCondition>
+          <VisibleCondition>IsControlVisible(7)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -261,13 +269,11 @@
           <Height>50</Height>
           <PosX>1069</PosX>
           <PosY>11</PosY>
-          <VisibleCondition>IsControlVisible(4)</VisibleCondition>
+          <VisibleCondition>IsControlVisible(7)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid40 White" />
           <LabelText>#WorldWeather.TodayTemperature</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>

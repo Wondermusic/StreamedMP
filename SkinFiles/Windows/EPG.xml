@@ -26,6 +26,24 @@
       <CoverImage x:type="ImageBrush" Image="\tvviewbg.png" Stretch="Fill" />
       <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
     </Control>
+    <Control x:type="Guide">
+      <Name>NewGuide</Name>
+      <Id>12</Id>
+      <Width>1256</Width>
+      <Height>631</Height>
+      <PosX>10</PosX>
+      <PosY>75</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <GuideStyle StyleId="GuideStyle">
+        <TimelineMarkerThickness>0</TimelineMarkerThickness>
+      </GuideStyle>
+      <ChannelListWidth>330</ChannelListWidth>
+      <GuideItemHeight>59</GuideItemHeight>
+      <ChannelStyle StyleId="GuideChannelStyle" />
+      <ProgramStyle StyleId="GuideProgramStyle" />
+    </Control>
     <Control x:type="Group">
       <Name>UpperBar</Name>
       <Id>1</Id>
@@ -53,9 +71,7 @@
           <VisibleCondition>!IsPlayer(mvCentral)</VisibleCondition>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid40 White" />
           <LabelText>#currentmodule</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -68,7 +84,7 @@
       <Name>Time / Weather</Name>
       <Id>3</Id>
       <Width>1280</Width>
-      <Height>720</Height>
+      <Height>100</Height>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
@@ -97,10 +113,8 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid60 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
-          <LabelText>#Time</LabelText>
+          <LabelStyle StyleId="Fluid60 White" />
+          <LabelText>#time</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -112,7 +126,7 @@
           <Width>306</Width>
           <Height>76</Height>
           <PosX>975</PosX>
-          <VisibleCondition>IsPluginEnabled(WorldWeather)</VisibleCondition>
+          <VisibleCondition>IsPluginEnabled(World Weather)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -128,7 +142,7 @@
           <Height>43</Height>
           <PosX>1003</PosX>
           <PosY>17</PosY>
-          <VisibleCondition>IsControlVisible(4)</VisibleCondition>
+          <VisibleCondition>IsControlVisible(6)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -144,13 +158,11 @@
           <Height>50</Height>
           <PosX>1069</PosX>
           <PosY>11</PosY>
-          <VisibleCondition>IsControlVisible(4)</VisibleCondition>
+          <VisibleCondition>IsControlVisible(6)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid40 White" />
           <LabelText>#WorldWeather.TodayTemperature</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -158,27 +170,6 @@
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
         </Control>
       </GroupControls>
-    </Control>
-    <Control x:type="Label">
-      <Name>Info</Name>
-      <Id>10</Id>
-      <Width>1280</Width>
-      <Height>90</Height>
-      <PosY>392</PosY>
-      <VisibleCondition>IsMediaPortalWindow(2014)</VisibleCondition>
-      <IsWindowOpenVisible>false</IsWindowOpenVisible>
-      <Animations />
-      <MediaPortalFocusControls />
-      <LabelStyle StyleId="FluidTitle80 White">
-        <FontSize>20</FontSize>
-      </LabelStyle>
-      <LabelText>@notavailable</LabelText>
-      <LabelTextAlignment>Center</LabelTextAlignment>
-      <IsScrollingEnabled>false</IsScrollingEnabled>
-      <ScrollDelay>1</ScrollDelay>
-      <ScrollSpeed>25</ScrollSpeed>
-      <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
-      <ScrollSeperator>   |   </ScrollSeperator>
     </Control>
     <Control x:type="Button">
       <Name>Menu</Name>
@@ -205,4 +196,5 @@
       </Actions>
     </Control>
   </WindowControls>
+  <VisibleCondition>IsMediaPortalWindow(600)</VisibleCondition>
 </Window>

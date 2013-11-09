@@ -45,15 +45,12 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid80 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid80 White" />
           <LabelText>#Play.Current.Title</LabelText>
           <LabelTextAlignment>Center</LabelTextAlignment>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollDelay>2</ScrollDelay>
           <ScrollSpeed>8</ScrollSpeed>
-          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+          <ScrollSeperator>  |  </ScrollSeperator>
         </Control>
         <Control x:type="ProgressBar">
           <Name>ProgressBar</Name>
@@ -77,9 +74,7 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid80 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid80 White" />
           <LabelText>#currentplaytime</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -92,13 +87,10 @@
           <Height>90</Height>
           <PosX>955</PosX>
           <PosY>626</PosY>
-          <VisibleCondition>!IsPlayer(Rockstar)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid80 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid80 White" />
           <LabelText>#currentremaining</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -208,9 +200,7 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid40 White" />
           <LabelText>#currentmodule</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -223,7 +213,7 @@
       <Name>Time / Weather</Name>
       <Id>14</Id>
       <Width>1280</Width>
-      <Height>720</Height>
+      <Height>100</Height>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
@@ -252,10 +242,8 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid60 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
-          <LabelText>#Time</LabelText>
+          <LabelStyle StyleId="Fluid60 White" />
+          <LabelText>#time</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -267,7 +255,7 @@
           <Width>306</Width>
           <Height>76</Height>
           <PosX>975</PosX>
-          <VisibleCondition>IsPluginEnabled(WorldWeather)</VisibleCondition>
+          <VisibleCondition>IsPluginEnabled(World Weather)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -283,7 +271,7 @@
           <Height>43</Height>
           <PosX>1003</PosX>
           <PosY>17</PosY>
-          <VisibleCondition>IsControlVisible(4)</VisibleCondition>
+          <VisibleCondition>IsControlVisible(17)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -299,13 +287,11 @@
           <Height>50</Height>
           <PosX>1069</PosX>
           <PosY>11</PosY>
-          <VisibleCondition>IsControlVisible(4)</VisibleCondition>
+          <VisibleCondition>IsControlVisible(17)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid40 White" />
           <LabelText>#WorldWeather.TodayTemperature</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>

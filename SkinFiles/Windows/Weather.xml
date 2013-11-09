@@ -71,9 +71,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="FluidTitle40 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="FluidTitle40 White" />
               <LabelText>@current</LabelText>
               <LabelTextAlignment>Center</LabelTextAlignment>
               <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -90,9 +88,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="FluidTitle50 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="FluidTitle50 White" />
               <LabelText>#WorldWeather.TodayTemperature</LabelText>
               <LabelTextAlignment>Center</LabelTextAlignment>
               <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -109,9 +105,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="FluidTitle30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="FluidTitle30 White" />
               <LabelText>#WorldWeather.TodayCondition</LabelText>
               <LabelTextAlignment>Center</LabelTextAlignment>
               <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -128,9 +122,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="FluidBody30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="FluidBody30 White" />
               <LabelText>@Moonphase</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
@@ -146,9 +138,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="FluidBody30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="FluidBody30 White" />
               <LabelText>#WorldWeather.LocationMoonPhase</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
@@ -164,9 +154,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="FluidBody30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="FluidBody30 White" />
               <LabelText>@Wind</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
@@ -182,9 +170,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="FluidBody30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="FluidBody30 White" />
               <LabelText>#WorldWeather.TodayWindSpeed+, +#WorldWeather.TodayWindDirection+, +#WorldWeather.TodayWindDirectionDegree</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
@@ -242,9 +228,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="FluidTitle40 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="FluidTitle40 White" />
               <LabelText>@Forecast</LabelText>
               <LabelTextAlignment>Center</LabelTextAlignment>
               <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -261,9 +245,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>#WorldWeather.ForecastDay1Day</LabelText>
               <LabelTextAlignment>Center</LabelTextAlignment>
               <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -294,9 +276,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>#WorldWeather.ForecastDay1High+ / +#WorldWeather.ForecastDay1Low</LabelText>
               <LabelTextAlignment>Center</LabelTextAlignment>
               <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -313,9 +293,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>#WorldWeather.ForecastDay1Condition</LabelText>
               <LabelTextAlignment>Center</LabelTextAlignment>
               <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -347,9 +325,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>#WorldWeather.ForecastDay2Day</LabelText>
               <LabelTextAlignment>Center</LabelTextAlignment>
               <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -381,9 +357,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>#WorldWeather.ForecastDay2High+ / +#WorldWeather.ForecastDay2Low</LabelText>
               <LabelTextAlignment>Center</LabelTextAlignment>
               <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -400,9 +374,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>#WorldWeather.ForecastDay2Condition</LabelText>
               <LabelTextAlignment>Center</LabelTextAlignment>
               <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -434,9 +406,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>#WorldWeather.ForecastDay3Day</LabelText>
               <LabelTextAlignment>Center</LabelTextAlignment>
               <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -468,9 +438,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>#WorldWeather.ForecastDay3High+ / +#WorldWeather.ForecastDay3Low</LabelText>
               <LabelTextAlignment>Center</LabelTextAlignment>
               <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -487,14 +455,130 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>#WorldWeather.ForecastDay3Condition</LabelText>
               <LabelTextAlignment>Center</LabelTextAlignment>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
               <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+            </Control>
+          </GroupControls>
+        </Control>
+        <Control x:type="Group">
+          <Name>Button Goup</Name>
+          <Id>45</Id>
+          <Width>1104</Width>
+          <Height>69</Height>
+          <PosX>98</PosX>
+          <PosY>649</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <GroupStyle StyleId="Empty" />
+          <GroupControls>
+            <Control x:type="Button">
+              <Name>Button 1</Name>
+              <Id>46</Id>
+              <Width>300</Width>
+              <Height>72</Height>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls>
+                <MediaPortalControlId>2</MediaPortalControlId>
+              </MediaPortalFocusControls>
+              <ButtonStyle>
+                <CornerRadius>12,0,0,0</CornerRadius>
+                <NoFocusBrush x:type="ImageBrush" Image="\tv_button_ no_focus.png" Stretch="Fill" />
+                <NoFocusBorderBrush />
+                <FocusBrush x:type="ImageBrush" Image="\tv_button_focus.png" Stretch="Fill" />
+                <FocusBorderBrush />
+                <ShadeBrush x:type="GradientBrush">
+                  <Angle>Vertical</Angle>
+                  <GradientStops>
+                    <GradientStop Color="#1FF0F8FF" Offset="0" />
+                    <GradientStop Color="#00FFFFFF" Offset="0.59" />
+                    <GradientStop Color="#00FFFFFF" Offset="1" />
+                  </GradientStops>
+                </ShadeBrush>
+                <GlossBrush />
+                <FontType>Titan</FontType>
+                <FontSize>35</FontSize>
+                <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+                <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+                <LabelMargin>0,-5,0,0</LabelMargin>
+              </ButtonStyle>
+              <LabelText>@Weather</LabelText>
+              <Actions />
+            </Control>
+            <Control x:type="Button">
+              <Name>Button 2</Name>
+              <Id>47</Id>
+              <Width>300</Width>
+              <Height>72</Height>
+              <PosX>394</PosX>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls>
+                <MediaPortalControlId>3</MediaPortalControlId>
+              </MediaPortalFocusControls>
+              <ButtonStyle>
+                <CornerRadius>12,0,0,0</CornerRadius>
+                <NoFocusBrush x:type="ImageBrush" Image="\tv_button_ no_focus.png" Stretch="Fill" />
+                <NoFocusBorderBrush />
+                <FocusBrush x:type="ImageBrush" Image="\tv_button_focus.png" Stretch="Fill" />
+                <FocusBorderBrush />
+                <ShadeBrush x:type="GradientBrush">
+                  <Angle>Vertical</Angle>
+                  <GradientStops>
+                    <GradientStop Color="#1FF0F8FF" Offset="0" />
+                    <GradientStop Color="#00FFFFFF" Offset="0.59" />
+                    <GradientStop Color="#00FFFFFF" Offset="1" />
+                  </GradientStops>
+                </ShadeBrush>
+                <GlossBrush />
+                <FontType>Titan</FontType>
+                <FontSize>35</FontSize>
+                <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+                <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+                <LabelMargin>0,-5,0,0</LabelMargin>
+              </ButtonStyle>
+              <LabelText>@Place</LabelText>
+              <Actions />
+            </Control>
+            <Control x:type="Button">
+              <Name>Button 3</Name>
+              <Id>48</Id>
+              <Width>300</Width>
+              <Height>72</Height>
+              <PosX>798</PosX>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls>
+                <MediaPortalControlId>9</MediaPortalControlId>
+              </MediaPortalFocusControls>
+              <ButtonStyle>
+                <CornerRadius>12,0,0,0</CornerRadius>
+                <NoFocusBrush x:type="ImageBrush" Image="\tv_button_ no_focus.png" Stretch="Fill" />
+                <NoFocusBorderBrush />
+                <FocusBrush x:type="ImageBrush" Image="\tv_button_focus.png" Stretch="Fill" />
+                <FocusBorderBrush />
+                <ShadeBrush x:type="GradientBrush">
+                  <Angle>Vertical</Angle>
+                  <GradientStops>
+                    <GradientStop Color="#1FF0F8FF" Offset="0" />
+                    <GradientStop Color="#00FFFFFF" Offset="0.59" />
+                    <GradientStop Color="#00FFFFFF" Offset="1" />
+                  </GradientStops>
+                </ShadeBrush>
+                <GlossBrush />
+                <FontType>Titan</FontType>
+                <FontSize>35</FontSize>
+                <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+                <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+                <LabelMargin>0,-5,0,0</LabelMargin>
+              </ButtonStyle>
+              <LabelText>@Refresh</LabelText>
+              <Actions />
             </Control>
           </GroupControls>
         </Control>
@@ -527,10 +611,8 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
-          <LabelText>#currentmodule</LabelText>
+          <LabelStyle StyleId="Fluid40 White" />
+          <LabelText>#WorldWeather.Location</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -542,7 +624,7 @@
       <Name>Time / Weather</Name>
       <Id>3</Id>
       <Width>1280</Width>
-      <Height>720</Height>
+      <Height>100</Height>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
@@ -571,10 +653,8 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid60 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
-          <LabelText>#Time</LabelText>
+          <LabelStyle StyleId="Fluid60 White" />
+          <LabelText>#time</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -586,7 +666,7 @@
           <Width>306</Width>
           <Height>76</Height>
           <PosX>975</PosX>
-          <VisibleCondition>IsPluginEnabled(WorldWeather)</VisibleCondition>
+          <VisibleCondition>IsPluginEnabled(World Weather)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -602,7 +682,7 @@
           <Height>43</Height>
           <PosX>1003</PosX>
           <PosY>17</PosY>
-          <VisibleCondition>IsControlVisible(4)</VisibleCondition>
+          <VisibleCondition>IsControlVisible(6)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -618,13 +698,11 @@
           <Height>50</Height>
           <PosX>1069</PosX>
           <PosY>11</PosY>
-          <VisibleCondition>IsControlVisible(4)</VisibleCondition>
+          <VisibleCondition>IsControlVisible(6)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid40 White" />
           <LabelText>#WorldWeather.TodayTemperature</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>

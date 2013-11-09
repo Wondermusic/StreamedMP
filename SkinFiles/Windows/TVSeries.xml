@@ -42,35 +42,33 @@
           <Width>493</Width>
           <Height>60</Height>
           <PosX>312</PosX>
-          <PosY>428</PosY>
+          <PosY>418</PosY>
           <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="FluidBody50 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="FluidBody50 White" />
           <LabelText>#selecteditem</LabelText>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
-          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+          <ScrollSeperator>  |  </ScrollSeperator>
         </Control>
         <Control x:type="Image">
           <Name>SelectedThumb</Name>
           <Id>4</Id>
-          <Width>317</Width>
-          <Height>447</Height>
-          <PosX>10</PosX>
-          <PosY>209</PosY>
-          <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
+          <Width>299</Width>
+          <Height>417</Height>
+          <PosX>3</PosX>
+          <PosY>298</PosY>
+          <VisibleCondition>IsControlVisible(3)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <ImageStyle StyleId="VideoCover" />
-          <Image>#TV.RecordedTV.thumb</Image>
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>#MPD2.Thumb.TVSeries</Image>
+          <DefaultImage>\defaultVideo.png</DefaultImage>
           <ImageStretch>Uniform</ImageStretch>
-          <ImageMargin>-20,-20,-20,-20</ImageMargin>
-          <CoverImage x:type="ImageBrush" Image="\round.poster.frame.png" Stretch="Fill" />
+          <ImageCornerRadius>15</ImageCornerRadius>
+          <CoverImage />
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
         </Control>
         <Control x:type="List">
@@ -92,35 +90,32 @@
         <Control x:type="Image">
           <Name>Star Image</Name>
           <Id>30</Id>
-          <Width>282</Width>
-          <Height>21</Height>
-          <PosX>18</PosX>
-          <PosY>640</PosY>
-          <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
+          <Width>172</Width>
+          <Height>33</Height>
+          <PosX>318</PosX>
+          <PosY>475</PosY>
+          <VisibleCondition>IsControlVisible(3)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
           <ImageStyle StyleId="Logo_Image" />
-          <Image>\Logos\TVSeries\+#TVSeries.Series.FiveStarPath+.png</Image>
+          <Image>\Logos\Stars\+#TVSeries.Series.FiveStarPath</Image>
           <ImageStretch>Fill</ImageStretch>
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
         </Control>
         <Control x:type="Label">
           <Name>Rating Label</Name>
           <Id>31</Id>
-          <Width>282</Width>
+          <Width>285</Width>
           <Height>40</Height>
-          <PosX>18</PosX>
-          <PosY>664</PosY>
-          <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
+          <PosX>505</PosX>
+          <PosY>471</PosY>
+          <VisibleCondition>IsControlVisible(3)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid30 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
-          <LabelText> +#MPD2.TVSeries.Rating</LabelText>
-          <LabelTextAlignment>Center</LabelTextAlignment>
+          <LabelStyle StyleId="Fluid30 White" />
+          <LabelText>#MPD2.TVSeries.Rating</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
@@ -131,20 +126,16 @@
           <Width>491</Width>
           <Height>199</Height>
           <PosX>314</PosX>
-          <PosY>510</PosY>
-          <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
+          <PosY>515</PosY>
+          <VisibleCondition>IsControlVisible(3)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid30 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
-          <LabelText>#MovingPictures.SelectedMovie.summary</LabelText>
+          <LabelStyle StyleId="Fluid30 White" />
+          <LabelText>#MPD2.TVSeries.Summary</LabelText>
           <IsVertical>true</IsVertical>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollDelay>2</ScrollDelay>
           <ScrollSpeed>6</ScrollSpeed>
-          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
           <ScrollSeperator>-------------------------------------</ScrollSeperator>
         </Control>
         <Control x:type="Image">
@@ -152,8 +143,8 @@
           <Id>33</Id>
           <Width>40</Width>
           <Height>40</Height>
-          <PosX>253</PosX>
-          <PosY>265</PosY>
+          <PosX>265</PosX>
+          <PosY>214</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -167,8 +158,8 @@
           <Id>34</Id>
           <Width>40</Width>
           <Height>40</Height>
-          <PosX>253</PosX>
-          <PosY>265</PosY>
+          <PosX>265</PosX>
+          <PosY>214</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -206,9 +197,7 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid40 White" />
           <LabelText>#TVSeries.CurrentView</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -221,7 +210,7 @@
       <Name>Time / Weather</Name>
       <Id>21</Id>
       <Width>1280</Width>
-      <Height>720</Height>
+      <Height>100</Height>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
@@ -250,10 +239,8 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid60 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
-          <LabelText>#Time</LabelText>
+          <LabelStyle StyleId="Fluid60 White" />
+          <LabelText>#time</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -265,7 +252,7 @@
           <Width>306</Width>
           <Height>76</Height>
           <PosX>975</PosX>
-          <VisibleCondition>IsPluginEnabled(WorldWeather)</VisibleCondition>
+          <VisibleCondition>IsPluginEnabled(World Weather)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -281,7 +268,7 @@
           <Height>43</Height>
           <PosX>1003</PosX>
           <PosY>17</PosY>
-          <VisibleCondition>IsControlVisible(4)</VisibleCondition>
+          <VisibleCondition>IsControlVisible(24)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -297,13 +284,11 @@
           <Height>50</Height>
           <PosX>1069</PosX>
           <PosY>11</PosY>
-          <VisibleCondition>IsControlVisible(4)</VisibleCondition>
+          <VisibleCondition>IsControlVisible(24)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid40 White" />
           <LabelText>#WorldWeather.TodayTemperature</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>

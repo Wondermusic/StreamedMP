@@ -26,12 +26,8 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <ImageStyle>
-            <BorderThickness>0,0,0,0</BorderThickness>
-            <CornerRadius>0,0,0,0</CornerRadius>
-            <BackgroundBrush x:type="ImageBrush" Image="\Hovers\hover_UpdateControl.jpg" Stretch="Fill" />
-          </ImageStyle>
-          <Image>#MPD2.fanart.TVSeries</Image>
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\Hovers\hover_UpdateControl.jpg</Image>
           <ImageStretch>Fill</ImageStretch>
           <CoverImage x:type="ImageBrush" Image="\mainoverlay.png" Stretch="Fill" />
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
@@ -59,15 +55,12 @@
           <Height>40</Height>
           <PosX>55</PosX>
           <PosY>220</PosY>
-          <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
+          <VisibleCondition>!IsControlVisible(9)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid30 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid30 White" />
           <LabelText>#UpdateControl.UpdateSize+ - +#UpdateControl.UpdateSeverity</LabelText>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
         </Control>
@@ -78,17 +71,15 @@
           <Height>50</Height>
           <PosX>5</PosX>
           <PosY>270</PosY>
-          <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
+          <VisibleCondition>!IsControlVisible(9)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="FluidTitle40 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="FluidTitle40 White" />
           <LabelText>#UpdateControl.UpdateTitle</LabelText>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
-          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+          <ScrollDelay>2</ScrollDelay>
+          <ScrollSpeed>10</ScrollSpeed>
+          <ScrollSeperator>   |   </ScrollSeperator>
         </Control>
         <Control x:type="Image">
           <Name>Image</Name>
@@ -97,7 +88,7 @@
           <Height>50</Height>
           <PosX>5</PosX>
           <PosY>220</PosY>
-          <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
+          <VisibleCondition>!IsControlVisible(9)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -109,24 +100,20 @@
         <Control x:type="Label">
           <Name>Description</Name>
           <Id>18</Id>
-          <Width>500</Width>
+          <Width>611</Width>
           <Height>400</Height>
           <PosX>5</PosX>
           <PosY>320</PosY>
-          <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
+          <VisibleCondition>!IsControlVisible(9)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid30 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid30 White" />
           <LabelText>#UpdateControl.UpdateDescription</LabelText>
           <IsVertical>true</IsVertical>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollDelay>2</ScrollDelay>
           <ScrollSpeed>5</ScrollSpeed>
-          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
-          <ScrollSeperator>--------------------------------------</ScrollSeperator>
+          <ScrollSeperator>--------------------------------------------</ScrollSeperator>
         </Control>
       </GroupControls>
     </Control>
@@ -157,10 +144,8 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
-          <LabelText>#currentmodule</LabelText>
+          <LabelStyle StyleId="Fluid40 White" />
+          <LabelText>Update Control</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -172,7 +157,7 @@
       <Name>Time / Weather</Name>
       <Id>3</Id>
       <Width>1280</Width>
-      <Height>720</Height>
+      <Height>100</Height>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
@@ -201,10 +186,8 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid60 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
-          <LabelText>#Time</LabelText>
+          <LabelStyle StyleId="Fluid60 White" />
+          <LabelText>#time</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -216,7 +199,7 @@
           <Width>306</Width>
           <Height>76</Height>
           <PosX>975</PosX>
-          <VisibleCondition>IsPluginEnabled(WorldWeather)</VisibleCondition>
+          <VisibleCondition>IsPluginEnabled(World Weather)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -232,7 +215,7 @@
           <Height>43</Height>
           <PosX>1003</PosX>
           <PosY>17</PosY>
-          <VisibleCondition>IsControlVisible(4)</VisibleCondition>
+          <VisibleCondition>IsControlVisible(6)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -248,13 +231,11 @@
           <Height>50</Height>
           <PosX>1069</PosX>
           <PosY>11</PosY>
-          <VisibleCondition>IsControlVisible(4)</VisibleCondition>
+          <VisibleCondition>IsControlVisible(6)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid40 White" />
           <LabelText>#WorldWeather.TodayTemperature</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -268,16 +249,21 @@
       <Id>9</Id>
       <Width>336</Width>
       <Height>644</Height>
-      <PosX>1280</PosX>
-      <PosY>43</PosY>
+      <PosY>76</PosY>
       <VisibleCondition>IsMediaPortalControlFocused(2) || IsMediaPortalControlFocused(3) || IsMediaPortalControlFocused(5) || IsMediaPortalControlFocused(8) || IsMediaPortalControlFocused(7)</VisibleCondition>
       <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations>
-        <Animation x:type="Slide" Condition="VisibleTrue" Duration="300" Easing="EaseOut" StartX="1280" StartY="43" EndX="944" EndY="43" />
-        <Animation x:type="Slide" Condition="VisibleFalse" Duration="300" Delay="200" Easing="EaseIn" StartX="944" StartY="43" EndX="1280" EndY="43" />
+        <Animation x:type="Slide" Condition="VisibleTrue" Duration="300" Easing="EaseOut" StartX="-336" StartY="76" EndY="76" />
+        <Animation x:type="Slide" Condition="VisibleFalse" Duration="300" Delay="200" Easing="EaseIn" StartY="76" EndX="-366" EndY="76" />
       </Animations>
       <MediaPortalFocusControls />
-      <GroupStyle StyleId="ActionMenu BG" />
+      <GroupStyle>
+        <BorderThickness>0,0,0,0</BorderThickness>
+        <CornerRadius>0,0,0,0</CornerRadius>
+        <BackgroundBrush x:type="ImageBrush" Image="\hiddenmenu_left.png" Stretch="Fill" />
+        <BorderBrush />
+        <GlossBrush />
+      </GroupStyle>
       <GroupControls>
         <Control x:type="List">
           <Name>List</Name>

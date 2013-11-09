@@ -8,76 +8,99 @@
   <BackgroundBrush />
   <WindowAnimations />
   <WindowControls>
-    <Control x:type="Group">
-      <Name>Playing Window</Name>
-      <Id>1</Id>
-      <Width>800</Width>
-      <Height>280</Height>
-      <PosX>265</PosX>
-      <PosY>140</PosY>
+    <Control x:type="Image">
+      <Name>Image</Name>
+      <Id>14</Id>
+      <Width>1280</Width>
+      <Height>720</Height>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
-      <GroupStyle>
-        <BorderThickness>0,0,0,0</BorderThickness>
-        <CornerRadius>0,0,0,0</CornerRadius>
-        <BackgroundBrush x:type="ImageBrush" Image="\dialogprogressbg.png" Stretch="Fill" />
-        <BorderBrush />
-        <GlossBrush />
-      </GroupStyle>
+      <ImageStyle StyleId="Logo_Image" />
+      <Image>\Hovers\hover_my radio.jpg</Image>
+      <ImageStretch>Fill</ImageStretch>
+      <CoverImage x:type="ImageBrush" Image="\fanartoverlay.png" Stretch="Fill" />
+      <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+    </Control>
+    <Control x:type="Group">
+      <Name>Radio</Name>
+      <Id>15</Id>
+      <Width>1280</Width>
+      <Height>720</Height>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <GroupStyle StyleId="Empty" />
       <GroupControls>
-        <Control x:type="Image">
-          <Name>thumb</Name>
-          <Id>2</Id>
-          <Width>200</Width>
-          <Height>200</Height>
-          <PosX>21</PosX>
-          <PosY>35</PosY>
+        <Control x:type="Group">
+          <Name>Playing Window</Name>
+          <Id>16</Id>
+          <Width>1123</Width>
+          <Height>268</Height>
+          <PosX>82</PosX>
+          <PosY>433</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <ImageStyle StyleId="Radio Cover" />
-          <Image>#Play.Current.Thumb</Image>
-          <ImageStretch>Fill</ImageStretch>
-          <ImageCornerRadius>12</ImageCornerRadius>
-          <CoverImage />
-          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
-        </Control>
-        <Control x:type="Label">
-          <Name>Title</Name>
-          <Id>3</Id>
-          <Width>554</Width>
-          <Height>60</Height>
-          <PosX>220</PosX>
-          <PosY>23</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <LabelStyle StyleId="FluidTitle50 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
-          <LabelText>#MPD2.Radio.Title</LabelText>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
-          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
-        </Control>
-        <Control x:type="Label">
-          <Name>Playtime</Name>
-          <Id>4</Id>
-          <Width>364</Width>
-          <Height>50</Height>
-          <PosX>220</PosX>
-          <PosY>70</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
-          <LabelText>#currentplaytime</LabelText>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
-          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+          <GroupStyle>
+            <BorderThickness>0,0,0,0</BorderThickness>
+            <CornerRadius>0,0,0,0</CornerRadius>
+            <BackgroundBrush x:type="ImageBrush" Image="\dialogprogressbg.png" Stretch="Fill" />
+            <BorderBrush />
+            <GlossBrush />
+          </GroupStyle>
+          <GroupControls>
+            <Control x:type="Image">
+              <Name>thumb</Name>
+              <Id>17</Id>
+              <Width>200</Width>
+              <Height>200</Height>
+              <PosX>21</PosX>
+              <PosY>35</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <ImageStyle StyleId="Logo_Image" />
+              <Image>#Play.Current.Thumb</Image>
+              <DefaultImage>\missing_coverart2.png</DefaultImage>
+              <ImageStretch>Fill</ImageStretch>
+              <ImageCornerRadius>10</ImageCornerRadius>
+              <CoverImage />
+              <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+            </Control>
+            <Control x:type="Label">
+              <Name>Title</Name>
+              <Id>18</Id>
+              <Width>861</Width>
+              <Height>60</Height>
+              <PosX>227</PosX>
+              <PosY>30</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <LabelStyle StyleId="FluidTitle50 White" />
+              <LabelText>#MPD2.Radio.Title</LabelText>
+              <ScrollDelay>2</ScrollDelay>
+              <ScrollSpeed>10</ScrollSpeed>
+              <ScrollSeperator>   |   </ScrollSeperator>
+            </Control>
+            <Control x:type="Label">
+              <Name>Playtime</Name>
+              <Id>19</Id>
+              <Width>391</Width>
+              <Height>60</Height>
+              <PosX>229</PosX>
+              <PosY>100</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <LabelStyle StyleId="FluidBody50 White" />
+              <LabelText>#currentplaytime</LabelText>
+              <IsScrollingEnabled>false</IsScrollingEnabled>
+              <ScrollSpeed>2</ScrollSpeed>
+              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+            </Control>
+          </GroupControls>
         </Control>
       </GroupControls>
     </Control>
@@ -108,9 +131,7 @@
           <VisibleCondition>IsControlVisible(9) || !IsPlayer(Rockstar)</VisibleCondition>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid40 White" />
           <LabelText>#currentmodule</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -123,7 +144,7 @@
       <Name>Time / Weather</Name>
       <Id>7</Id>
       <Width>1280</Width>
-      <Height>720</Height>
+      <Height>100</Height>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
@@ -152,10 +173,8 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid60 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
-          <LabelText>#Time</LabelText>
+          <LabelStyle StyleId="Fluid60 White" />
+          <LabelText>#time</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -167,7 +186,7 @@
           <Width>306</Width>
           <Height>76</Height>
           <PosX>975</PosX>
-          <VisibleCondition>IsPluginEnabled(WorldWeather)</VisibleCondition>
+          <VisibleCondition>IsPluginEnabled(World Weather)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -183,7 +202,7 @@
           <Height>43</Height>
           <PosX>1003</PosX>
           <PosY>17</PosY>
-          <VisibleCondition>IsControlVisible(4)</VisibleCondition>
+          <VisibleCondition>IsControlVisible(10)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -199,13 +218,11 @@
           <Height>50</Height>
           <PosX>1069</PosX>
           <PosY>11</PosY>
-          <VisibleCondition>IsControlVisible(4)</VisibleCondition>
+          <VisibleCondition>IsControlVisible(10)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid40 White" />
           <LabelText>#WorldWeather.TodayTemperature</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -240,5 +257,5 @@
       </Actions>
     </Control>
   </WindowControls>
-  <VisibleCondition>IsPlayer(IsRadio) || IsPlayer(RadioTime) || IsPlayer(Streamradio)</VisibleCondition>
+  <VisibleCondition>IsPlayer(IsRadio) || IsPlayer(Streamradio)</VisibleCondition>
 </Window>

@@ -46,9 +46,7 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="FluidTitle80 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="FluidTitle80 White" />
           <LabelText>#Play.Current.Artist</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -64,9 +62,7 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="FluidTitle50 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="FluidTitle50 White" />
           <LabelText>#Play.Current.Title</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -83,9 +79,7 @@
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="FluidBody30 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="FluidBody30 White" />
           <LabelText>@Next+:</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -102,9 +96,7 @@
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid40 White" />
           <LabelText>#Play.Next.Artist</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -121,9 +113,7 @@
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid40 White" />
           <LabelText>#Play.Next.Title+ / +#Play.Next.Duration</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -151,9 +141,7 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid80 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid80 White" />
           <LabelText>#currentplaytime</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -166,13 +154,10 @@
           <Height>90</Height>
           <PosX>955</PosX>
           <PosY>626</PosY>
-          <VisibleCondition>!IsPlayer(Rockstar)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid80 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid80 White" />
           <LabelText>#Play.Current.Duration</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -199,42 +184,20 @@
           <Name>Equalizer</Name>
           <Id>12</Id>
           <Width>400</Width>
-          <Height>400</Height>
-          <PosX>860</PosX>
-          <PosY>70</PosY>
+          <Height>149</Height>
+          <PosX>865</PosX>
+          <PosY>488</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <EqualizerStyle>
-            <BorderThickness>0,0,0,0</BorderThickness>
-            <CornerRadius>5,5,5,5</CornerRadius>
-            <BackgroundBrush />
-            <BorderBrush />
-            <LowRangeColor x:type="GradientBrush">
-              <Angle>Vertical</Angle>
-              <GradientStops>
-                <GradientStop Color="#FF000000" Offset="1" />
-                <GradientStop Color="#FF7FFF00" Offset="0.237" />
-                <GradientStop Color="#FFFFFF00" Offset="0" />
-              </GradientStops>
-            </LowRangeColor>
-            <MedRangeColor x:type="GradientBrush">
-              <Angle>Vertical</Angle>
-              <GradientStops>
-                <GradientStop Color="#FFFFFF00" Offset="0.468" />
-                <GradientStop Color="#FFFF0000" Offset="0" />
-              </GradientStops>
-            </MedRangeColor>
-            <MaxRangeColor x:type="ColorBrush" Color="#FFFF0000" />
-            <BandBorderColor />
-            <FallOffColor x:type="ColorBrush" Color="#FF00BFFF" />
-          </EqualizerStyle>
+          <EqualizerStyle StyleId="SingleBar" />
           <LowRangeValue>101</LowRangeValue>
           <MedRangeValue>201</MedRangeValue>
-          <BandSpacing>5</BandSpacing>
-          <BandBorderSize>2</BandBorderSize>
+          <BandCount>25</BandCount>
+          <BandSpacing>1</BandSpacing>
           <BandCornerRadius>1</BandCornerRadius>
-          <FalloffSpeed>10</FalloffSpeed>
+          <FalloffSpeed>5</FalloffSpeed>
+          <FallOffHeight>1</FallOffHeight>
         </Control>
       </GroupControls>
     </Control>
@@ -265,29 +228,8 @@
           <VisibleCondition>IsControlVisible(9) || !IsPlayer(Rockstar)</VisibleCondition>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid40 White" />
           <LabelText>#currentmodule</LabelText>
-          <LabelTextAlignment>Right</LabelTextAlignment>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
-          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
-        </Control>
-        <Control x:type="Label">
-          <Name>Window</Name>
-          <Id>15</Id>
-          <Width>493</Width>
-          <Height>50</Height>
-          <PosY>-6</PosY>
-          <VisibleCondition>IsPlayer(Rockstar)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
-          <Animations />
-          <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
-          <LabelText>#Rockstar.SelectedTrack.AlbumName</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -299,7 +241,7 @@
       <Name>Time / Weather</Name>
       <Id>16</Id>
       <Width>1280</Width>
-      <Height>720</Height>
+      <Height>100</Height>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
@@ -328,10 +270,8 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid60 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
-          <LabelText>#Time</LabelText>
+          <LabelStyle StyleId="Fluid60 White" />
+          <LabelText>#time</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -343,7 +283,7 @@
           <Width>306</Width>
           <Height>76</Height>
           <PosX>975</PosX>
-          <VisibleCondition>IsPluginEnabled(WorldWeather)</VisibleCondition>
+          <VisibleCondition>IsPluginEnabled(World Weather)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -359,7 +299,7 @@
           <Height>43</Height>
           <PosX>1003</PosX>
           <PosY>17</PosY>
-          <VisibleCondition>IsControlVisible(4)</VisibleCondition>
+          <VisibleCondition>IsControlVisible(19)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -375,13 +315,11 @@
           <Height>50</Height>
           <PosX>1069</PosX>
           <PosY>11</PosY>
-          <VisibleCondition>IsControlVisible(4)</VisibleCondition>
+          <VisibleCondition>IsControlVisible(19)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid40 White" />
           <LabelText>#WorldWeather.TodayTemperature</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>

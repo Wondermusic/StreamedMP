@@ -6,7 +6,7 @@
   <Height>608</Height>
   <PosX>298</PosX>
   <PosY>720</PosY>
-  <BackgroundBrush x:type="ImageBrush" Image="\Dialogbg.png" Stretch="Uniform" />
+  <BackgroundBrush x:type="ImageBrush" Image="\Dialogbg.png" Stretch="Fill" />
   <BorderBrush />
   <DialogAnimations>
     <Animation x:type="Slide" Condition="WindowOpen" Duration="400" Easing="EaseOut" StartX="298" StartY="720" EndX="298" EndY="114" />
@@ -18,8 +18,8 @@
       <Id>1</Id>
       <Width>80</Width>
       <Height>80</Height>
-      <PosX>492</PosX>
-      <PosY>-5</PosY>
+      <PosX>588</PosX>
+      <PosY>-2</PosY>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
@@ -45,55 +45,49 @@
     <Control x:type="Label">
       <Name>Title</Name>
       <Id>2</Id>
-      <Width>390</Width>
+      <Width>560</Width>
       <Height>60</Height>
-      <PosX>100</PosX>
+      <PosX>8</PosX>
       <PosY>12</PosY>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
-      <LabelStyle StyleId="FluidTitle50 White">
-        <FontSize>20</FontSize>
-      </LabelStyle>
+      <LabelStyle StyleId="FluidTitle50 White" />
       <LabelText>#Dialog.Label1</LabelText>
-      <IsScrollingEnabled>false</IsScrollingEnabled>
-      <ScrollSpeed>2</ScrollSpeed>
+      <ScrollDelay>2</ScrollDelay>
+      <ScrollSpeed>12</ScrollSpeed>
       <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
     </Control>
     <Control x:type="Label">
       <Name>TextArea1</Name>
       <Id>4</Id>
-      <Width>460</Width>
+      <Width>650</Width>
       <Height>50</Height>
-      <PosX>100</PosX>
+      <PosX>8</PosX>
       <PosY>80</PosY>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
-      <LabelStyle StyleId="Fluid40 White">
-        <FontSize>20</FontSize>
-      </LabelStyle>
+      <LabelStyle StyleId="Fluid40 White" />
       <LabelText>#Dialog.Label5</LabelText>
-      <IsScrollingEnabled>false</IsScrollingEnabled>
-      <ScrollSpeed>2</ScrollSpeed>
+      <ScrollDelay>2</ScrollDelay>
+      <ScrollSpeed>12</ScrollSpeed>
       <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
     </Control>
     <Control x:type="Label">
       <Name>TextArea2</Name>
       <Id>5</Id>
-      <Width>460</Width>
+      <Width>650</Width>
       <Height>50</Height>
-      <PosX>100</PosX>
+      <PosX>8</PosX>
       <PosY>130</PosY>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
-      <LabelStyle StyleId="Fluid40 White">
-        <FontSize>20</FontSize>
-      </LabelStyle>
+      <LabelStyle StyleId="Fluid40 White" />
       <LabelText>#Dialog.Label6</LabelText>
-      <IsScrollingEnabled>false</IsScrollingEnabled>
-      <ScrollSpeed>2</ScrollSpeed>
+      <ScrollDelay>2</ScrollDelay>
+      <ScrollSpeed>12</ScrollSpeed>
       <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
     </Control>
     <Control x:type="Image">

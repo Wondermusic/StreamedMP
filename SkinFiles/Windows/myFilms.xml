@@ -46,9 +46,7 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid40 White" />
           <LabelText>#selecteditem</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -301,9 +299,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="FluidTitle70 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="FluidTitle70 White" />
               <LabelText>#myfilms.user.mastertitle.value</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>6</ScrollSpeed>
@@ -319,9 +315,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>(+#myfilms.db.rating.value+/10)</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
@@ -337,9 +331,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>#myfilms.db.year.value+ - +#myfilms.db.length.value+min</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
@@ -382,9 +374,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>@Director+:</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
@@ -400,9 +390,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>#myfilms.db.director.value</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollDelay>2</ScrollDelay>
@@ -419,9 +407,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>@Country+:</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
@@ -437,9 +423,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>#myfilms.user.item1.value</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollDelay>2</ScrollDelay>
@@ -456,9 +440,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>@Producer+:</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
@@ -474,9 +456,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>#myfilms.user.item2.value</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollDelay>2</ScrollDelay>
@@ -493,9 +473,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>@Genre+:</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
@@ -511,9 +489,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>#myfilms.user.item3.value</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollDelay>2</ScrollDelay>
@@ -530,9 +506,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>@Language+:</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
@@ -548,9 +522,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>#myfilms.user.item4.value</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollDelay>2</ScrollDelay>
@@ -567,9 +539,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>@Date+:</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
@@ -585,9 +555,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>#myfilms.user.item5.value</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollDelay>2</ScrollDelay>
@@ -604,9 +572,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>@Actors+:</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
@@ -622,9 +588,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>#myfilms.db.actors.value</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollDelay>2</ScrollDelay>
@@ -641,9 +605,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid20 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid20 White" />
               <LabelText>#myfilms.db.description.value</LabelText>
               <IsVertical>true</IsVertical>
               <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -675,9 +637,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="FluidBody30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="FluidBody30 White" />
               <LabelText>@Description+:</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
@@ -693,9 +653,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid40 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid40 White" />
               <LabelText>#myfilms.db.description.value</LabelText>
               <IsVertical>true</IsVertical>
               <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -726,9 +684,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="FluidBody30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="FluidBody30 White" />
               <LabelText>@Comments+:</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
@@ -744,9 +700,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid40 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid40 White" />
               <LabelText>#myfilms.db.comments.value</LabelText>
               <IsVertical>true</IsVertical>
               <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -777,9 +731,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="FluidBody30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="FluidBody30 White" />
               <LabelText>@Actors+:</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
@@ -795,9 +747,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid40 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid40 White" />
               <LabelText>#myfilms.db.actors.value</LabelText>
               <IsVertical>true</IsVertical>
               <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -827,9 +777,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>@Video Format+:</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
@@ -845,9 +793,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>#myfilms.db.videoformat.value</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollDelay>2</ScrollDelay>
@@ -864,9 +810,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>@Video Bitrate+:</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
@@ -882,9 +826,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>#myfilms.db.videobitrate.value+ kbit/sec.</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollDelay>2</ScrollDelay>
@@ -901,9 +843,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>@Resolution+:</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
@@ -919,9 +859,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>#myfilms.db.resolution.value</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollDelay>2</ScrollDelay>
@@ -938,9 +876,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>@Audio Format+:</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
@@ -956,9 +892,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>#myfilms.db.audioformat.value</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollDelay>2</ScrollDelay>
@@ -975,9 +909,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>@Audio Bitrate+:</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
@@ -993,9 +925,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>#myfilms.db.audiobitrate.value+ kbit/sec.</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollDelay>2</ScrollDelay>
@@ -1012,9 +942,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>@Filesize+:</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
@@ -1030,9 +958,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>#myfilms.db.size.value+ MB</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollDelay>2</ScrollDelay>
@@ -1049,9 +975,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>@Info URL+:</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
@@ -1067,9 +991,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Fluid30 White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Fluid30 White" />
               <LabelText>#myfilms.db.url.value</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollDelay>2</ScrollDelay>
@@ -1177,9 +1099,7 @@
           <VisibleCondition>!IsPlayer(mvCentral)</VisibleCondition>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid40 White" />
           <LabelText>#myfilms.config.currentconfig</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -1192,7 +1112,7 @@
       <Name>Time / Weather</Name>
       <Id>3</Id>
       <Width>1280</Width>
-      <Height>720</Height>
+      <Height>100</Height>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
@@ -1221,10 +1141,8 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid60 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
-          <LabelText>#Time</LabelText>
+          <LabelStyle StyleId="Fluid60 White" />
+          <LabelText>#time</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -1236,7 +1154,7 @@
           <Width>306</Width>
           <Height>76</Height>
           <PosX>975</PosX>
-          <VisibleCondition>IsPluginEnabled(WorldWeather)</VisibleCondition>
+          <VisibleCondition>IsPluginEnabled(World Weather)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -1252,7 +1170,7 @@
           <Height>43</Height>
           <PosX>1003</PosX>
           <PosY>17</PosY>
-          <VisibleCondition>IsControlVisible(4)</VisibleCondition>
+          <VisibleCondition>IsControlVisible(6)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -1268,13 +1186,11 @@
           <Height>50</Height>
           <PosX>1069</PosX>
           <PosY>11</PosY>
-          <VisibleCondition>IsControlVisible(4)</VisibleCondition>
+          <VisibleCondition>IsControlVisible(6)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid40 White" />
           <LabelText>#WorldWeather.TodayTemperature</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>

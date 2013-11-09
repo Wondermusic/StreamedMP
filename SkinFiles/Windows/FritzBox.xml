@@ -21,7 +21,6 @@
         <CornerRadius>0,0,0,0</CornerRadius>
         <BackgroundBrush x:type="ImageBrush" Image="\Hovers\hover_FritzBox.jpg" Stretch="Fill" />
       </ImageStyle>
-      <Image>#MPDisplay.HoverImage</Image>
       <ImageStretch>Fill</ImageStretch>
       <CoverImage x:type="ImageBrush" Image="\mainoverlay.png" Stretch="Fill" />
       <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
@@ -48,13 +47,9 @@
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <ImageStyle>
-            <BorderThickness>0,0,0,0</BorderThickness>
-            <CornerRadius>0,0,0,0</CornerRadius>
-            <BackgroundBrush x:type="ImageBrush" Image="\CallMonitor.Unknown.png" Stretch="Uniform" />
-            <BorderBrush />
-          </ImageStyle>
+          <ImageStyle StyleId="Logo_Image" />
           <Image>#selectedthumb</Image>
+          <DefaultImage>\CallMonitor.Unknown.png</DefaultImage>
           <ImageStretch>Uniform</ImageStretch>
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
         </Control>
@@ -69,7 +64,31 @@
           <ListControlStyle StyleId="empty" />
           <ListType>MediaPortalListControl</ListType>
           <ListLayout>Auto</ListLayout>
-          <VerticalItemStyle StyleId="Vertical high" />
+          <VerticalItemStyle>
+            <NoFocusBrush x:type="ImageBrush" Image="\playlist_sub_nofocus.png" Stretch="Fill" />
+            <NoFocusBorderBrush />
+            <FocusBrush x:type="ImageBrush" Image="\playlist_sub_focus.png" Stretch="Fill" />
+            <FocusBorderBrush />
+            <FontType>Fluid</FontType>
+            <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FF808080" />
+            <LabelMargin>10,0,0,0</LabelMargin>
+            <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
+            <ImageMargin>3,3,3,3</ImageMargin>
+            <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
+            <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+            <ImageCornerRadius>4</ImageCornerRadius>
+            <Width>900</Width>
+            <Height>50</Height>
+            <ItemMargin>1,1,1,1</ItemMargin>
+            <HorizontalAlignment>Right</HorizontalAlignment>
+            <EnableLabel2>true</EnableLabel2>
+            <Label2FontType>Fluid</Label2FontType>
+            <Label2FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <Label2NoFocusFontBrush x:type="ColorBrush" Color="#FF808080" />
+            <Label2Margin>0,0,10,0</Label2Margin>
+            <Label2HorizontalAlignment>Right</Label2HorizontalAlignment>
+          </VerticalItemStyle>
           <HorizontalItemStyle StyleId="Horizontal high" />
           <CoverFlowItemStyle StyleId="CoverFlow high" />
         </Control>
@@ -84,9 +103,7 @@
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid40 White" />
           <LabelText>#selecteditem2</LabelText>
           <IsVertical>true</IsVertical>
           <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -123,9 +140,7 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid40 White" />
           <LabelText>Fritz!Box</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -138,7 +153,7 @@
       <Name>Time / Weather</Name>
       <Id>5</Id>
       <Width>1280</Width>
-      <Height>720</Height>
+      <Height>100</Height>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
@@ -167,10 +182,8 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid60 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
-          <LabelText>#Time</LabelText>
+          <LabelStyle StyleId="Fluid60 White" />
+          <LabelText>#time</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -182,7 +195,7 @@
           <Width>306</Width>
           <Height>76</Height>
           <PosX>975</PosX>
-          <VisibleCondition>IsPluginEnabled(WorldWeather)</VisibleCondition>
+          <VisibleCondition>IsPluginEnabled(World Weather)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -198,7 +211,7 @@
           <Height>43</Height>
           <PosX>1003</PosX>
           <PosY>17</PosY>
-          <VisibleCondition>IsControlVisible(4)</VisibleCondition>
+          <VisibleCondition>IsControlVisible(8)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -214,13 +227,11 @@
           <Height>50</Height>
           <PosX>1069</PosX>
           <PosY>11</PosY>
-          <VisibleCondition>IsControlVisible(4)</VisibleCondition>
+          <VisibleCondition>IsControlVisible(8)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Fluid40 White" />
           <LabelText>#WorldWeather.TodayTemperature</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -236,7 +247,7 @@
       <Height>644</Height>
       <PosX>1280</PosX>
       <PosY>43</PosY>
-      <VisibleCondition>!IsMediaPortalControlFocused(50)</VisibleCondition>
+      <VisibleCondition>IsMediaPortalControlFocused(2) || IsMediaPortalControlFocused(3) || IsMediaPortalControlFocused(4)</VisibleCondition>
       <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations>
         <Animation x:type="Slide" Condition="VisibleTrue" Duration="300" Easing="EaseOut" StartX="1280" StartY="43" EndX="944" EndY="43" />
