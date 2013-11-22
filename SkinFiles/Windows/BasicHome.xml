@@ -699,7 +699,7 @@
           <Animations />
           <MediaPortalFocusControls />
           <LabelStyle StyleId="FluidTitle50 White" />
-          <LabelText>New Label</LabelText>
+          <LabelText>#selecteditem</LabelText>
           <LabelTextAlignment>Center</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>

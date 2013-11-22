@@ -26,12 +26,9 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <ImageStyle>
-            <BorderThickness>0,0,0,0</BorderThickness>
-            <CornerRadius>0,0,0,0</CornerRadius>
-            <BackgroundBrush x:type="ImageBrush" Image="\Hovers\hover_my music.jpg" Stretch="Fill" />
-          </ImageStyle>
-          <Image>#MPD2.fanart.music</Image>
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>#MPD2.fanart.musicplay</Image>
+          <DefaultImage>\Hovers\My_Music.jpg</DefaultImage>
           <ImageStretch>Fill</ImageStretch>
           <CoverImage x:type="ImageBrush" Image="\fanartoverlaywidebanners.png" Stretch="Fill" />
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
