@@ -221,11 +221,10 @@
           <Id>14</Id>
           <Width>493</Width>
           <Height>50</Height>
-          <PosY>-6</PosY>
           <VisibleCondition>IsControlVisible(9) || !IsPlayer(Rockstar)</VisibleCondition>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White" />
+          <LabelStyle StyleId="FluidBody40 White" />
           <LabelText>#currentmodule</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>

@@ -65,7 +65,7 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White" />
+          <LabelStyle StyleId="FluidTitle40 White" />
           <LabelText>#TV.View.channel</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -97,7 +97,7 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White" />
+          <LabelStyle StyleId="FluidBody40 White" />
           <LabelText>#TV.View.genre</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -133,14 +133,14 @@
           <ListType>MediaPortalButtonGroup</ListType>
           <ListLayout>Auto</ListLayout>
           <VerticalItemStyle>
-            <NoFocusBrush x:type="ImageBrush" Image="\playlist_sub_nofocus.png" Stretch="Fill" />
+            <NoFocusBrush x:type="ImageBrush" Image="\tv_button_ no_focus.png" Stretch="Fill" />
             <NoFocusBorderBrush />
-            <FocusBrush x:type="ImageBrush" Image="\playlist_sub_focus.png" Stretch="Fill" />
+            <FocusBrush x:type="ImageBrush" Image="\tv_button_focus.png" Stretch="Fill" />
             <FocusBorderBrush />
-            <FontType>Fluid</FontType>
+            <FontType>Fluid Title Caps</FontType>
             <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
-            <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
-            <LabelMargin>10,0,0,0</LabelMargin>
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FFD3D3D3" />
+            <LabelMargin>15,-5,-15,0</LabelMargin>
             <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
             <ImageMargin>3,3,3,3</ImageMargin>
             <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
@@ -179,11 +179,10 @@
           <Id>2</Id>
           <Width>493</Width>
           <Height>50</Height>
-          <PosY>-6</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White" />
+          <LabelStyle StyleId="FluidBody40 White" />
           <LabelText>#currentmodule</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>

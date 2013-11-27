@@ -18,8 +18,7 @@
       <Height>100</Height>
       <PosX>450</PosX>
       <PosY>347</PosY>
-      <VisibleCondition>IsMediaPortalConnected</VisibleCondition>
-      <IsWindowOpenVisible>false</IsWindowOpenVisible>
+      <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
       <ButtonStyle>

@@ -193,16 +193,15 @@
           <Id>20</Id>
           <Width>493</Width>
           <Height>50</Height>
-          <PosY>-6</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White" />
+          <LabelStyle StyleId="FluidBody40 White" />
           <LabelText>#TVSeries.CurrentView</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
-          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+          <ScrollDelay>2</ScrollDelay>
+          <ScrollSpeed>10</ScrollSpeed>
+          <ScrollSeperator>  |  </ScrollSeperator>
         </Control>
       </GroupControls>
     </Control>

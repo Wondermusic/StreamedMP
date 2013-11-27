@@ -91,7 +91,7 @@
             <NoFocusBorderBrush />
             <FocusBrush x:type="ImageBrush" Image="\playlist_sub_focus.png" Stretch="Fill" />
             <FocusBorderBrush />
-            <FontType>Fluid</FontType>
+            <FontType>Fluid Body Caps</FontType>
             <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
             <NoFocusFontBrush x:type="ColorBrush" Color="#FF808080" />
             <LabelMargin>10,0,0,0</LabelMargin>
@@ -181,12 +181,12 @@
           <Width>224</Width>
           <Height>50</Height>
           <PosX>925</PosX>
-          <PosY>150</PosY>
+          <PosY>152</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <LabelStyle StyleId="FluidBody40 White" />
-          <LabelText>@Files+:</LabelText>
+          <LabelText>@Elements+:</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
@@ -194,14 +194,18 @@
         <Control x:type="Label">
           <Name>Items</Name>
           <Id>23</Id>
-          <Width>132</Width>
+          <Width>97</Width>
           <Height>50</Height>
-          <PosX>1130</PosX>
-          <PosY>150</PosY>
+          <PosX>1159</PosX>
+          <PosY>152</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White" />
+          <LabelStyle>
+            <FontType>Fluid</FontType>
+            <FontSize>40</FontSize>
+            <FontBrush x:type="ColorBrush" Color="#FF4169E1" />
+          </LabelStyle>
           <LabelText>#itemcount</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -233,11 +237,10 @@
           <Id>2</Id>
           <Width>493</Width>
           <Height>50</Height>
-          <PosY>-6</PosY>
           <VisibleCondition>IsControlVisible(9) || !IsPlayer(Rockstar)</VisibleCondition>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White" />
+          <LabelStyle StyleId="FluidBody40 White" />
           <LabelText>#currentmodule</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -249,12 +252,11 @@
           <Id>29</Id>
           <Width>493</Width>
           <Height>50</Height>
-          <PosY>-6</PosY>
           <VisibleCondition>IsPlayer(Rockstar)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White" />
+          <LabelStyle StyleId="FluidBody40 White" />
           <LabelText>#Rockstar.SelectedTrack.AlbumName</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>

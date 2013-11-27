@@ -9,6 +9,53 @@
   <WindowAnimations />
   <WindowControls>
     <Control x:type="Group">
+      <Name>Fanart Window</Name>
+      <Id>62</Id>
+      <Width>1280</Width>
+      <Height>720</Height>
+      <VisibleCondition>IsMediaPortalControlFocused(667)</VisibleCondition>
+      <IsWindowOpenVisible>false</IsWindowOpenVisible>
+      <Animations />
+      <MediaPortalFocusControls />
+      <GroupStyle StyleId="Empty" />
+      <GroupControls>
+        <Control x:type="Image">
+          <Name>Hovers</Name>
+          <Id>63</Id>
+          <Width>1280</Width>
+          <Height>720</Height>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle>
+            <BorderThickness>0,0,0,0</BorderThickness>
+            <CornerRadius>0,0,0,0</CornerRadius>
+            <BackgroundBrush x:type="ImageBrush" Image="\Hovers\hover_moving pictures.jpg" Stretch="Fill" />
+          </ImageStyle>
+          <Image>#MPD2.fanart.MovingPictures</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverImage />
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Label">
+          <Name>Name</Name>
+          <Id>64</Id>
+          <Width>1280</Width>
+          <Height>60</Height>
+          <PosY>600</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="FluidTitle50 White" />
+          <LabelText>#MovingPictures.SelectedMovie.title</LabelText>
+          <LabelTextAlignment>Center</LabelTextAlignment>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+      </GroupControls>
+    </Control>
+    <Control x:type="Group">
       <Name>Details Window</Name>
       <Id>18</Id>
       <Width>1280</Width>
@@ -420,53 +467,6 @@
       </GroupControls>
     </Control>
     <Control x:type="Group">
-      <Name>Fanart Window</Name>
-      <Id>62</Id>
-      <Width>1280</Width>
-      <Height>720</Height>
-      <VisibleCondition>IsMediaPortalControlFocused(667)</VisibleCondition>
-      <IsWindowOpenVisible>false</IsWindowOpenVisible>
-      <Animations />
-      <MediaPortalFocusControls />
-      <GroupStyle StyleId="Empty" />
-      <GroupControls>
-        <Control x:type="Image">
-          <Name>Hovers</Name>
-          <Id>63</Id>
-          <Width>1280</Width>
-          <Height>720</Height>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <ImageStyle>
-            <BorderThickness>0,0,0,0</BorderThickness>
-            <CornerRadius>0,0,0,0</CornerRadius>
-            <BackgroundBrush x:type="ImageBrush" Image="\Hovers\hover_moving pictures.jpg" Stretch="Fill" />
-          </ImageStyle>
-          <Image>#MPD2.fanart.MovingPictures</Image>
-          <ImageStretch>Fill</ImageStretch>
-          <CoverImage />
-          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
-        </Control>
-        <Control x:type="Label">
-          <Name>Name</Name>
-          <Id>64</Id>
-          <Width>1280</Width>
-          <Height>60</Height>
-          <PosY>600</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <LabelStyle StyleId="FluidTitle50 White" />
-          <LabelText>#MovingPictures.SelectedMovie.title</LabelText>
-          <LabelTextAlignment>Center</LabelTextAlignment>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
-          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
-        </Control>
-      </GroupControls>
-    </Control>
-    <Control x:type="Group">
       <Name>Main Window</Name>
       <Id>9</Id>
       <Width>1280</Width>
@@ -737,11 +737,10 @@
           <Id>2</Id>
           <Width>493</Width>
           <Height>50</Height>
-          <PosY>-6</PosY>
           <VisibleCondition>IsControlVisible(9)</VisibleCondition>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White" />
+          <LabelStyle StyleId="FluidBody40 White" />
           <LabelText>#MovingPictures.SelectedNode.name</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
