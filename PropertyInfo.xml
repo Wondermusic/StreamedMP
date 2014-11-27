@@ -2352,5 +2352,14 @@
       </MediaPortalTags>
       <IsInternal>false</IsInternal>
     </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#TVSeries.Subtitle</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>Drama, Thriller</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#TVSeries.Subtitle" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
   </Properties>
 </XmlPropertyInfo>

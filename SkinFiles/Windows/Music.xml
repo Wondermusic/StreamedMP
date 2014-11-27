@@ -57,23 +57,6 @@
           <CoverImage />
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
         </Control>
-        <Control x:type="Image">
-          <Name>thumb</Name>
-          <Id>42</Id>
-          <Width>337</Width>
-          <Height>300</Height>
-          <PosX>-1</PosX>
-          <PosY>215</PosY>
-          <VisibleCondition>IsControlVisible(19)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
-          <Animations />
-          <MediaPortalFocusControls />
-          <ImageStyle StyleId="Logo_Image" />
-          <Image>\mediatip_cdbox.png</Image>
-          <ImageStretch>Fill</ImageStretch>
-          <CoverImage />
-          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
-        </Control>
         <Control x:type="List">
           <Name>List</Name>
           <Id>20</Id>
@@ -86,87 +69,17 @@
           <ListControlStyle StyleId="empty" />
           <ListType>MediaPortalListControl</ListType>
           <ListLayout>Auto</ListLayout>
-          <VerticalItemStyle>
-            <NoFocusBrush x:type="ImageBrush" Image="\playlist_sub_nofocus.png" Stretch="Fill" />
-            <NoFocusBorderBrush />
-            <FocusBrush x:type="ImageBrush" Image="\playlist_sub_focus.png" Stretch="Fill" />
-            <FocusBorderBrush />
-            <FontType>Fluid Body Caps</FontType>
-            <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
-            <NoFocusFontBrush x:type="ColorBrush" Color="#FF808080" />
-            <LabelMargin>10,0,0,0</LabelMargin>
-            <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
-            <ImageMargin>3,3,3,3</ImageMargin>
-            <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
-            <ImageVerticalAlignment>Top</ImageVerticalAlignment>
-            <ImageCornerRadius>4</ImageCornerRadius>
-            <Width>850</Width>
-            <Height>50</Height>
-            <ItemMargin>1,1,1,1</ItemMargin>
-            <HorizontalAlignment>Right</HorizontalAlignment>
-            <EnableLabel2>true</EnableLabel2>
-            <Label2FontType>Fluid</Label2FontType>
-            <Label2FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
-            <Label2NoFocusFontBrush x:type="ColorBrush" Color="#FF808080" />
-            <Label2Margin>0,0,10,0</Label2Margin>
-            <Label2HorizontalAlignment>Right</Label2HorizontalAlignment>
-          </VerticalItemStyle>
-          <HorizontalItemStyle>
-            <BorderThickness>1,1,1,1</BorderThickness>
-            <CornerRadius>12,12,12,12</CornerRadius>
-            <NoFocusBrush />
-            <NoFocusBorderBrush />
-            <FocusBrush />
-            <FocusBorderBrush />
-            <EnableLabel>false</EnableLabel>
-            <FontType>Fluid</FontType>
-            <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
-            <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
-            <LabelMargin>3,3,3,3</LabelMargin>
-            <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
-            <EnableImage>true</EnableImage>
-            <ImageMargin>3,3,3,33</ImageMargin>
-            <ImageVerticalAlignment>Top</ImageVerticalAlignment>
-            <ImageCornerRadius>10</ImageCornerRadius>
-            <Width>250</Width>
-            <Height>250</Height>
-            <ItemMargin>1,1,1,1</ItemMargin>
-            <SelectionZoomX>150</SelectionZoomX>
-            <SelectionZoomY>150</SelectionZoomY>
-            <SelectionZoomDuration>200</SelectionZoomDuration>
-          </HorizontalItemStyle>
-          <CoverFlowItemStyle>
-            <BorderThickness>1,1,1,1</BorderThickness>
-            <CornerRadius>12,12,12,12</CornerRadius>
-            <NoFocusBrush />
-            <NoFocusBorderBrush />
-            <FocusBrush />
-            <FocusBorderBrush />
-            <EnableLabel>false</EnableLabel>
-            <FontType>Fluid</FontType>
-            <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
-            <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
-            <LabelMargin>3,3,3,3</LabelMargin>
-            <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
-            <EnableImage>true</EnableImage>
-            <ImageMargin>3,3,3,33</ImageMargin>
-            <ImageVerticalAlignment>Top</ImageVerticalAlignment>
-            <ImageCornerRadius>10</ImageCornerRadius>
-            <Width>300</Width>
-            <Height>300</Height>
-            <ItemMargin>1,1,1,1</ItemMargin>
-            <SelectionZoomX>145</SelectionZoomX>
-            <SelectionZoomY>145</SelectionZoomY>
-            <SelectionZoomDuration>200</SelectionZoomDuration>
-          </CoverFlowItemStyle>
+          <VerticalItemStyle StyleId="Music Vertical" />
+          <HorizontalItemStyle StyleId="Pictures Horizontal" />
+          <CoverFlowItemStyle StyleId="Music CoverFlow" />
         </Control>
         <Control x:type="Image">
           <Name>Bar bottom</Name>
           <Id>21</Id>
           <Width>353</Width>
           <Height>69</Height>
-          <PosX>915</PosX>
-          <PosY>142</PosY>
+          <PosX>8</PosX>
+          <PosY>639</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -180,8 +93,8 @@
           <Id>22</Id>
           <Width>224</Width>
           <Height>50</Height>
-          <PosX>925</PosX>
-          <PosY>152</PosY>
+          <PosX>17</PosX>
+          <PosY>649</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -196,8 +109,8 @@
           <Id>23</Id>
           <Width>97</Width>
           <Height>50</Height>
-          <PosX>1159</PosX>
-          <PosY>152</PosY>
+          <PosX>252</PosX>
+          <PosY>649</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -353,6 +266,25 @@
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="Image">
+          <Name>Rec</Name>
+          <Id>43</Id>
+          <Width>60</Width>
+          <Height>60</Height>
+          <PosX>7</PosX>
+          <PosY>3</PosY>
+          <VisibleCondition>IsTvRecording</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations>
+            <Animation x:type="Fade" Condition="VisibleTrue" Duration="2000" Reverse="true" Repeat="100000" From="20" />
+            <Animation x:type="Fade" Condition="VisibleFalse" Duration="2000" From="100" To="0" />
+          </Animations>
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\tvguide_record_button.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
         </Control>
       </GroupControls>
     </Control>

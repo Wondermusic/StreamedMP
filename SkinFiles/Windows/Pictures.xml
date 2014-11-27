@@ -39,16 +39,15 @@
         <Control x:type="Label">
           <Name>Title</Name>
           <Id>14</Id>
-          <Width>638</Width>
+          <Width>1280</Width>
           <Height>50</Height>
-          <PosX>24</PosX>
-          <PosY>216</PosY>
-          <VisibleCondition>IsMediaPortalListLayout(Vertical) || !IsMediaPortalWindow(2014)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <PosY>642</PosY>
+          <VisibleCondition>!IsMediaPortalWindow(2014) ++ (IsMediaPortalListLayout(Horizontal) || IsMediaPortalListLayout(CoverFlow))</VisibleCondition>
           <Animations />
           <MediaPortalFocusControls />
           <LabelStyle StyleId="Fluid40 White" />
           <LabelText>#selecteditem</LabelText>
+          <LabelTextAlignment>Center</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
@@ -100,8 +99,24 @@
           <ListType>MediaPortalListControl</ListType>
           <ListLayout>Auto</ListLayout>
           <VerticalItemStyle StyleId="Vertical high" />
-          <HorizontalItemStyle StyleId="Horizontal high" />
-          <CoverFlowItemStyle StyleId="CoverFlow high" />
+          <HorizontalItemStyle StyleId="Pictures Horizontal" />
+          <CoverFlowItemStyle StyleId="Pictures CoverFlow" />
+        </Control>
+        <Control x:type="Label">
+          <Name>Title</Name>
+          <Id>20</Id>
+          <Width>635</Width>
+          <Height>50</Height>
+          <PosY>642</PosY>
+          <VisibleCondition>!IsMediaPortalWindow(2014) ++ IsMediaPortalListLayout(Vertical)</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="Fluid40 White" />
+          <LabelText>#selecteditem</LabelText>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
         </Control>
       </GroupControls>
     </Control>
@@ -228,6 +243,25 @@
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="Image">
+          <Name>Rec</Name>
+          <Id>19</Id>
+          <Width>60</Width>
+          <Height>60</Height>
+          <PosX>7</PosX>
+          <PosY>3</PosY>
+          <VisibleCondition>IsTvRecording</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations>
+            <Animation x:type="Fade" Condition="VisibleTrue" Duration="2000" Reverse="true" Repeat="100000" From="20" />
+            <Animation x:type="Fade" Condition="VisibleFalse" Duration="2000" From="100" To="0" />
+          </Animations>
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\tvguide_record_button.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
         </Control>
       </GroupControls>
     </Control>
