@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Window xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="PlayerWindow">
   <IsDefault>false</IsDefault>
-  <Width>1280</Width>
-  <Height>720</Height>
+  <Width>1024</Width>
+  <Height>768</Height>
   <Name>MovingPicturesPlaying</Name>
   <Id>23</Id>
   <BackgroundBrush />
@@ -11,8 +11,8 @@
     <Control x:type="Group">
       <Name>Playing Screen</Name>
       <Id>1</Id>
-      <Width>1280</Width>
-      <Height>720</Height>
+      <Width>1024</Width>
+      <Height>768</Height>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
@@ -21,17 +21,15 @@
         <Control x:type="Image">
           <Name>Hovers</Name>
           <Id>2</Id>
-          <Width>1280</Width>
-          <Height>720</Height>
+          <Width>1366</Width>
+          <Height>768</Height>
+          <PosX>-150</PosX>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <ImageStyle>
-            <BorderThickness>0,0,0,0</BorderThickness>
-            <CornerRadius>0,0,0,0</CornerRadius>
-            <BackgroundBrush x:type="ImageBrush" Image="\Hovers\hover_moving pictures.jpg" Stretch="Fill" />
-          </ImageStyle>
+          <ImageStyle StyleId="Logo_Image" />
           <Image>#MPD2.fanart.MovingPictures</Image>
+          <DefaultImage>\Hovers\hover_moving pictures.jpg</DefaultImage>
           <ImageStretch>Fill</ImageStretch>
           <CoverImage x:type="ImageBrush" Image="\movingpics_overlay.png" Stretch="Fill" />
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
@@ -39,9 +37,9 @@
         <Control x:type="Label">
           <Name>Title</Name>
           <Id>3</Id>
-          <Width>1280</Width>
+          <Width>1024</Width>
           <Height>90</Height>
-          <PosY>407</PosY>
+          <PosY>443</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -57,7 +55,7 @@
           <Width>280</Width>
           <Height>50</Height>
           <PosX>6</PosX>
-          <PosY>509</PosY>
+          <PosY>530</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -73,7 +71,7 @@
           <Width>318</Width>
           <Height>50</Height>
           <PosX>288</PosX>
-          <PosY>509</PosY>
+          <PosY>530</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -89,7 +87,7 @@
           <Width>280</Width>
           <Height>50</Height>
           <PosX>6</PosX>
-          <PosY>564</PosY>
+          <PosY>580</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -105,7 +103,7 @@
           <Width>318</Width>
           <Height>50</Height>
           <PosX>288</PosX>
-          <PosY>564</PosY>
+          <PosY>580</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -118,10 +116,10 @@
         <Control x:type="ProgressBar">
           <Name>ProgressBar</Name>
           <Id>8</Id>
-          <Width>649</Width>
-          <Height>50</Height>
-          <PosX>313</PosX>
-          <PosY>654</PosY>
+          <Width>984</Width>
+          <Height>40</Height>
+          <PosX>20</PosX>
+          <PosY>638</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -133,7 +131,7 @@
           <Id>9</Id>
           <Width>321</Width>
           <Height>90</Height>
-          <PosY>626</PosY>
+          <PosY>675</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -148,8 +146,8 @@
           <Id>10</Id>
           <Width>321</Width>
           <Height>90</Height>
-          <PosX>955</PosX>
-          <PosY>626</PosY>
+          <PosX>700</PosX>
+          <PosY>675</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -165,7 +163,7 @@
           <Id>11</Id>
           <Width>125</Width>
           <Height>85</Height>
-          <PosY>332</PosY>
+          <PosY>352</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -180,7 +178,7 @@
           <Width>125</Width>
           <Height>85</Height>
           <PosX>125</PosX>
-          <PosY>332</PosY>
+          <PosY>352</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -195,7 +193,7 @@
           <Width>125</Width>
           <Height>85</Height>
           <PosX>250</PosX>
-          <PosY>332</PosY>
+          <PosY>352</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -210,7 +208,7 @@
           <Width>125</Width>
           <Height>85</Height>
           <PosX>375</PosX>
-          <PosY>332</PosY>
+          <PosY>352</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -225,7 +223,7 @@
           <Width>125</Width>
           <Height>85</Height>
           <PosX>500</PosX>
-          <PosY>332</PosY>
+          <PosY>352</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -239,7 +237,7 @@
     <Control x:type="Group">
       <Name>UpperBar</Name>
       <Id>23</Id>
-      <Width>509</Width>
+      <Width>425</Width>
       <Height>58</Height>
       <PosX>290</PosX>
       <PosY>6</PosY>
@@ -247,8 +245,6 @@
       <Animations />
       <MediaPortalFocusControls />
       <GroupStyle>
-        <BorderThickness>0,0,0,0</BorderThickness>
-        <CornerRadius>0,0,0,0</CornerRadius>
         <BackgroundBrush x:type="ImageBrush" Image="\tvtitlebg.png" Stretch="Fill" />
         <BorderBrush />
         <GlossBrush />
@@ -257,7 +253,7 @@
         <Control x:type="Label">
           <Name>Window</Name>
           <Id>24</Id>
-          <Width>493</Width>
+          <Width>410</Width>
           <Height>50</Height>
           <VisibleCondition>IsControlVisible(9)</VisibleCondition>
           <Animations />
@@ -273,8 +269,8 @@
     </Control>
     <Control x:type="Group">
       <Name>Time / Weather</Name>
-      <Id>16</Id>
-      <Width>1280</Width>
+      <Id>25</Id>
+      <Width>1024</Width>
       <Height>100</Height>
       <VisibleCondition />
       <Animations />
@@ -283,7 +279,7 @@
       <GroupControls>
         <Control x:type="Image">
           <Name>Clock BG</Name>
-          <Id>17</Id>
+          <Id>26</Id>
           <Width>297</Width>
           <Height>72</Height>
           <VisibleCondition />
@@ -296,10 +292,10 @@
         </Control>
         <Control x:type="Label">
           <Name>Time</Name>
-          <Id>18</Id>
-          <Width>188</Width>
+          <Id>27</Id>
+          <Width>202</Width>
           <Height>70</Height>
-          <PosX>96</PosX>
+          <PosX>82</PosX>
           <PosY>-4</PosY>
           <VisibleCondition />
           <Animations />
@@ -313,10 +309,10 @@
         </Control>
         <Control x:type="Image">
           <Name>WorldWeatherBG</Name>
-          <Id>19</Id>
+          <Id>28</Id>
           <Width>306</Width>
           <Height>76</Height>
-          <PosX>975</PosX>
+          <PosX>715</PosX>
           <VisibleCondition>IsPluginEnabled(World Weather)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
@@ -328,12 +324,12 @@
         </Control>
         <Control x:type="Image">
           <Name>Weather Icon Today</Name>
-          <Id>20</Id>
+          <Id>29</Id>
           <Width>51</Width>
           <Height>43</Height>
-          <PosX>1003</PosX>
+          <PosX>735</PosX>
           <PosY>17</PosY>
-          <VisibleCondition>IsControlVisible(19)</VisibleCondition>
+          <VisibleCondition>IsControlVisible(4)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -344,12 +340,12 @@
         </Control>
         <Control x:type="Label">
           <Name>Current Temp</Name>
-          <Id>21</Id>
+          <Id>30</Id>
           <Width>196</Width>
           <Height>50</Height>
-          <PosX>1069</PosX>
+          <PosX>800</PosX>
           <PosY>11</PosY>
-          <VisibleCondition>IsControlVisible(19)</VisibleCondition>
+          <VisibleCondition>IsControlVisible(4)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -362,7 +358,7 @@
         </Control>
         <Control x:type="Image">
           <Name>Rec</Name>
-          <Id>25</Id>
+          <Id>31</Id>
           <Width>60</Width>
           <Height>60</Height>
           <PosX>7</PosX>
@@ -384,7 +380,7 @@
     <Control x:type="Button">
       <Name>PlayMenu</Name>
       <Id>22</Id>
-      <Width>1280</Width>
+      <Width>1024</Width>
       <Height>100</Height>
       <VisibleCondition />
       <Animations />

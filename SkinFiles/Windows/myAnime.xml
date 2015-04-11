@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Window xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="MediaPortalWindow">
   <IsDefault>false</IsDefault>
-  <Width>1280</Width>
-  <Height>720</Height>
+  <Width>1024</Width>
+  <Height>768</Height>
   <Name>myAnime</Name>
   <Id>8</Id>
   <BackgroundBrush />
@@ -11,8 +11,8 @@
     <Control x:type="Group">
       <Name>Main Window</Name>
       <Id>12</Id>
-      <Width>1280</Width>
-      <Height>720</Height>
+      <Width>1024</Width>
+      <Height>768</Height>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
@@ -21,17 +21,15 @@
         <Control x:type="Image">
           <Name>Hovers</Name>
           <Id>13</Id>
-          <Width>1280</Width>
-          <Height>720</Height>
+          <Width>1366</Width>
+          <Height>768</Height>
+          <PosX>-150</PosX>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <ImageStyle>
-            <BorderThickness>0,0,0,0</BorderThickness>
-            <CornerRadius>0,0,0,0</CornerRadius>
-            <BackgroundBrush x:type="ImageBrush" Image="\Hovers\My_Anime.jpg" Stretch="Fill" />
-          </ImageStyle>
+          <ImageStyle StyleId="Logo_Image" />
           <Image>#Anime3.Fanart.1</Image>
+          <DefaultImage>\Hovers\My_Anime.jpg</DefaultImage>
           <ImageStretch>Fill</ImageStretch>
           <CoverImage x:type="ImageBrush" Image="\mainoverlay.png" Stretch="Fill" />
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
@@ -41,8 +39,8 @@
           <Id>14</Id>
           <Width>638</Width>
           <Height>50</Height>
-          <PosX>24</PosX>
-          <PosY>216</PosY>
+          <PosX>5</PosX>
+          <PosY>231</PosY>
           <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
@@ -56,16 +54,17 @@
         <Control x:type="Image">
           <Name>SelectedThumb</Name>
           <Id>15</Id>
-          <Width>260</Width>
-          <Height>388</Height>
-          <PosX>24</PosX>
-          <PosY>274</PosY>
+          <Width>250</Width>
+          <Height>360</Height>
+          <PosX>5</PosX>
+          <PosY>284</PosY>
           <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <ImageStyle StyleId="VideoCover" />
+          <ImageStyle StyleId="Logo_Image" />
           <Image>#MPD2.Thumb.MyAnime</Image>
+          <DefaultImage>\defaultVideo.png</DefaultImage>
           <ImageStretch>Uniform</ImageStretch>
           <CoverImage />
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
@@ -73,9 +72,9 @@
         <Control x:type="List">
           <Name>List</Name>
           <Id>16</Id>
-          <Width>1280</Width>
-          <Height>490</Height>
-          <PosY>223</PosY>
+          <Width>1024</Width>
+          <Height>526</Height>
+          <PosY>234</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -83,16 +82,17 @@
           <ListType>MediaPortalListControl</ListType>
           <ListLayout>Auto</ListLayout>
           <VerticalItemStyle StyleId="Vertical high" />
+          <VerticalIconItemStyle StyleId="Empty ListStyle" />
           <HorizontalItemStyle StyleId="Horizontal high" />
           <CoverFlowItemStyle StyleId="CoverFlow high" />
         </Control>
         <Control x:type="Label">
           <Name>Description</Name>
           <Id>17</Id>
-          <Width>375</Width>
-          <Height>313</Height>
-          <PosX>288</PosX>
-          <PosY>400</PosY>
+          <Width>252</Width>
+          <Height>352</Height>
+          <PosX>260</PosX>
+          <PosY>290</PosY>
           <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
@@ -109,10 +109,10 @@
         <Control x:type="Label">
           <Name>Year</Name>
           <Id>18</Id>
-          <Width>150</Width>
+          <Width>130</Width>
           <Height>30</Height>
-          <PosX>288</PosX>
-          <PosY>275</PosY>
+          <PosX>5</PosX>
+          <PosY>645</PosY>
           <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
@@ -126,10 +126,10 @@
         <Control x:type="Label">
           <Name>Year Label</Name>
           <Id>19</Id>
-          <Width>226</Width>
+          <Width>357</Width>
           <Height>30</Height>
-          <PosX>437</PosX>
-          <PosY>275</PosY>
+          <PosX>135</PosX>
+          <PosY>645</PosY>
           <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
@@ -143,10 +143,10 @@
         <Control x:type="Label">
           <Name>Episodes</Name>
           <Id>20</Id>
-          <Width>150</Width>
+          <Width>130</Width>
           <Height>30</Height>
-          <PosX>288</PosX>
-          <PosY>315</PosY>
+          <PosX>5</PosX>
+          <PosY>675</PosY>
           <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
@@ -160,10 +160,10 @@
         <Control x:type="Label">
           <Name>Episodes Label</Name>
           <Id>21</Id>
-          <Width>226</Width>
+          <Width>366</Width>
           <Height>30</Height>
-          <PosX>437</PosX>
-          <PosY>315</PosY>
+          <PosX>135</PosX>
+          <PosY>675</PosY>
           <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
@@ -177,10 +177,10 @@
         <Control x:type="Label">
           <Name>Rating</Name>
           <Id>22</Id>
-          <Width>150</Width>
+          <Width>130</Width>
           <Height>30</Height>
-          <PosX>288</PosX>
-          <PosY>355</PosY>
+          <PosX>5</PosX>
+          <PosY>705</PosY>
           <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
@@ -194,10 +194,10 @@
         <Control x:type="Label">
           <Name>Rating Label</Name>
           <Id>23</Id>
-          <Width>226</Width>
+          <Width>375</Width>
           <Height>30</Height>
-          <PosX>437</PosX>
-          <PosY>355</PosY>
+          <PosX>135</PosX>
+          <PosY>705</PosY>
           <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
@@ -213,7 +213,7 @@
     <Control x:type="Group">
       <Name>UpperBar</Name>
       <Id>1</Id>
-      <Width>509</Width>
+      <Width>425</Width>
       <Height>58</Height>
       <PosX>290</PosX>
       <PosY>6</PosY>
@@ -221,8 +221,6 @@
       <Animations />
       <MediaPortalFocusControls />
       <GroupStyle>
-        <BorderThickness>0,0,0,0</BorderThickness>
-        <CornerRadius>0,0,0,0</CornerRadius>
         <BackgroundBrush x:type="ImageBrush" Image="\tvtitlebg.png" Stretch="Fill" />
         <BorderBrush />
         <GlossBrush />
@@ -231,9 +229,9 @@
         <Control x:type="Label">
           <Name>Window</Name>
           <Id>2</Id>
-          <Width>493</Width>
+          <Width>410</Width>
           <Height>50</Height>
-          <PosY>-6</PosY>
+          <PosY>-3</PosY>
           <VisibleCondition>!IsPlayer(mvCentral)</VisibleCondition>
           <Animations />
           <MediaPortalFocusControls />
@@ -248,8 +246,8 @@
     </Control>
     <Control x:type="Group">
       <Name>Time / Weather</Name>
-      <Id>4</Id>
-      <Width>1280</Width>
+      <Id>36</Id>
+      <Width>1024</Width>
       <Height>100</Height>
       <VisibleCondition />
       <Animations />
@@ -258,7 +256,7 @@
       <GroupControls>
         <Control x:type="Image">
           <Name>Clock BG</Name>
-          <Id>5</Id>
+          <Id>37</Id>
           <Width>297</Width>
           <Height>72</Height>
           <VisibleCondition />
@@ -271,10 +269,10 @@
         </Control>
         <Control x:type="Label">
           <Name>Time</Name>
-          <Id>6</Id>
-          <Width>188</Width>
+          <Id>38</Id>
+          <Width>202</Width>
           <Height>70</Height>
-          <PosX>96</PosX>
+          <PosX>82</PosX>
           <PosY>-4</PosY>
           <VisibleCondition />
           <Animations />
@@ -288,10 +286,10 @@
         </Control>
         <Control x:type="Image">
           <Name>WorldWeatherBG</Name>
-          <Id>7</Id>
+          <Id>39</Id>
           <Width>306</Width>
           <Height>76</Height>
-          <PosX>975</PosX>
+          <PosX>715</PosX>
           <VisibleCondition>IsPluginEnabled(World Weather)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
@@ -303,12 +301,12 @@
         </Control>
         <Control x:type="Image">
           <Name>Weather Icon Today</Name>
-          <Id>8</Id>
+          <Id>40</Id>
           <Width>51</Width>
           <Height>43</Height>
-          <PosX>1003</PosX>
+          <PosX>735</PosX>
           <PosY>17</PosY>
-          <VisibleCondition>IsControlVisible(7)</VisibleCondition>
+          <VisibleCondition>IsControlVisible(4)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -319,12 +317,12 @@
         </Control>
         <Control x:type="Label">
           <Name>Current Temp</Name>
-          <Id>9</Id>
+          <Id>41</Id>
           <Width>196</Width>
           <Height>50</Height>
-          <PosX>1069</PosX>
+          <PosX>800</PosX>
           <PosY>11</PosY>
-          <VisibleCondition>IsControlVisible(7)</VisibleCondition>
+          <VisibleCondition>IsControlVisible(4)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -337,7 +335,7 @@
         </Control>
         <Control x:type="Image">
           <Name>Rec</Name>
-          <Id>36</Id>
+          <Id>42</Id>
           <Width>60</Width>
           <Height>60</Height>
           <PosX>7</PosX>
@@ -360,14 +358,14 @@
       <Name>Action Menu</Name>
       <Id>10</Id>
       <Width>336</Width>
-      <Height>644</Height>
-      <PosX>1280</PosX>
-      <PosY>43</PosY>
+      <Height>714</Height>
+      <PosX>690</PosX>
+      <PosY>51</PosY>
       <VisibleCondition>IsMediaPortalControlFocused(4) || IsMediaPortalControlFocused(11) || IsMediaPortalControlFocused(12) || IsMediaPortalControlFocused(920) || IsMediaPortalControlFocused(921) || IsMediaPortalControlFocused(922) || IsMediaPortalControlFocused(923) || IsMediaPortalControlFocused(925) || IsMediaPortalControlFocused(926)</VisibleCondition>
       <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations>
-        <Animation x:type="Slide" Condition="VisibleTrue" Duration="300" Easing="EaseOut" StartX="1280" StartY="43" EndX="944" EndY="43" />
-        <Animation x:type="Slide" Condition="VisibleFalse" Duration="300" Delay="200" Easing="EaseIn" StartX="944" StartY="43" EndX="1280" EndY="43" />
+        <Animation x:type="Slide" Condition="VisibleTrue" Duration="300" Easing="EaseOut" StartX="1024" StartY="51" EndX="690" EndY="51" />
+        <Animation x:type="Slide" Condition="VisibleFalse" Duration="300" Delay="200" Easing="EaseIn" StartX="690" StartY="51" EndX="1024" EndY="51" />
       </Animations>
       <MediaPortalFocusControls />
       <GroupStyle StyleId="ActionMenu BG" />
@@ -386,6 +384,7 @@
           <ListType>MediaPortalButtonGroup</ListType>
           <ListLayout>Auto</ListLayout>
           <VerticalItemStyle StyleId="ActionMenu" />
+          <VerticalIconItemStyle />
           <HorizontalItemStyle>
             <BorderThickness>1,1,1,1</BorderThickness>
             <CornerRadius>4,4,4,4</CornerRadius>
@@ -429,7 +428,7 @@
     <Control x:type="Button">
       <Name>Menu</Name>
       <Id>35</Id>
-      <Width>1280</Width>
+      <Width>1024</Width>
       <Height>100</Height>
       <VisibleCondition>IsPlayer(None)</VisibleCondition>
       <IsWindowOpenVisible>false</IsWindowOpenVisible>

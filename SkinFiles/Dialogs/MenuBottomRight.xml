@@ -4,13 +4,13 @@
   <Id>2015</Id>
   <Width>669</Width>
   <Height>608</Height>
-  <PosX>298</PosX>
-  <PosY>720</PosY>
+  <PosX>177</PosX>
+  <PosY>100</PosY>
   <BackgroundBrush x:type="ImageBrush" Image="\Dialogbg.png" Stretch="Fill" />
   <BorderBrush />
   <DialogAnimations>
-    <Animation x:type="Slide" Condition="WindowOpen" Duration="400" Easing="EaseOut" StartX="298" StartY="720" EndX="298" EndY="114" />
-    <Animation x:type="Slide" Condition="WindowClose" Duration="400" Easing="EaseIn" StartX="298" StartY="114" EndX="298" EndY="720" />
+    <Animation x:type="Slide" Condition="WindowOpen" Duration="400" Easing="EaseOut" StartX="177" StartY="768" EndX="177" EndY="100" />
+    <Animation x:type="Slide" Condition="WindowClose" Duration="400" Easing="EaseIn" StartX="177" StartY="100" EndX="177" EndY="768" />
   </DialogAnimations>
   <DialogControls>
     <Control x:type="Button">
@@ -104,6 +104,7 @@
       <ListType>MediaPortalDialogList</ListType>
       <ListLayout>Auto</ListLayout>
       <VerticalItemStyle StyleId="Dialog ListControl" />
+      <VerticalIconItemStyle />
       <HorizontalItemStyle>
         <BorderThickness>1,1,1,1</BorderThickness>
         <CornerRadius>4,4,4,4</CornerRadius>

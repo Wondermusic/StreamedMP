@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Window xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="MediaPortalWindow">
   <IsDefault>false</IsDefault>
-  <Width>1280</Width>
-  <Height>720</Height>
+  <Width>1024</Width>
+  <Height>768</Height>
   <Name>Rockstar</Name>
   <Id>15</Id>
   <BackgroundBrush />
@@ -11,8 +11,8 @@
     <Control x:type="Group">
       <Name>Main Window</Name>
       <Id>12</Id>
-      <Width>1280</Width>
-      <Height>720</Height>
+      <Width>1024</Width>
+      <Height>768</Height>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
@@ -21,17 +21,15 @@
         <Control x:type="Image">
           <Name>Hovers</Name>
           <Id>13</Id>
-          <Width>1280</Width>
-          <Height>720</Height>
+          <Width>1366</Width>
+          <Height>768</Height>
+          <PosX>-150</PosX>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <ImageStyle>
-            <BorderThickness>0,0,0,0</BorderThickness>
-            <CornerRadius>0,0,0,0</CornerRadius>
-            <BackgroundBrush x:type="ImageBrush" Image="\Hovers\My_Rockstar.jpg" Stretch="Fill" />
-          </ImageStyle>
+          <ImageStyle StyleId="Logo_Image" />
           <Image>#MPD2.fanart.music</Image>
+          <DefaultImage>\Hovers\My_Rockstar.jpg</DefaultImage>
           <ImageStretch>Fill</ImageStretch>
           <CoverImage x:type="ImageBrush" Image="\mainoverlay.png" Stretch="Fill" />
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
@@ -58,9 +56,9 @@
         <Control x:type="List">
           <Name>List</Name>
           <Id>23</Id>
-          <Width>1280</Width>
-          <Height>490</Height>
-          <PosY>221</PosY>
+          <Width>1024</Width>
+          <Height>527</Height>
+          <PosY>234</PosY>
           <VisibleCondition>IsMediaPortalControlFocused(200) || IsMediaPortalControlFocused(300)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
@@ -69,6 +67,7 @@
           <ListType>MediaPortalListControl</ListType>
           <ListLayout>Auto</ListLayout>
           <VerticalItemStyle StyleId="Vertical high" />
+          <VerticalIconItemStyle />
           <HorizontalItemStyle StyleId="Horizontal high" />
           <CoverFlowItemStyle StyleId="CoverFlow high" />
         </Control>
@@ -76,7 +75,7 @@
           <Name>NewList</Name>
           <Id>24</Id>
           <Width>450</Width>
-          <Height>250</Height>
+          <Height>305</Height>
           <PosX>10</PosX>
           <PosY>450</PosY>
           <VisibleCondition>IsMediaPortalControlFocused(2) || IsMediaPortalControlFocused(3) || IsMediaPortalControlFocused(4) || IsMediaPortalControlFocused(20) || IsMediaPortalControlFocused(30) || IsMediaPortalControlFocused(32)</VisibleCondition>
@@ -106,6 +105,7 @@
             <Height>50</Height>
             <HorizontalAlignment>Left</HorizontalAlignment>
           </VerticalItemStyle>
+          <VerticalIconItemStyle />
           <HorizontalItemStyle>
             <BorderThickness>1,1,1,1</BorderThickness>
             <CornerRadius>4,4,4,4</CornerRadius>
@@ -147,45 +147,9 @@
       </GroupControls>
     </Control>
     <Control x:type="Group">
-      <Name>UpperBar</Name>
-      <Id>1</Id>
-      <Width>509</Width>
-      <Height>58</Height>
-      <PosX>290</PosX>
-      <PosY>6</PosY>
-      <VisibleCondition />
-      <Animations />
-      <MediaPortalFocusControls />
-      <GroupStyle>
-        <BorderThickness>0,0,0,0</BorderThickness>
-        <CornerRadius>0,0,0,0</CornerRadius>
-        <BackgroundBrush x:type="ImageBrush" Image="\tvtitlebg.png" Stretch="Fill" />
-        <BorderBrush />
-        <GlossBrush />
-      </GroupStyle>
-      <GroupControls>
-        <Control x:type="Label">
-          <Name>Window</Name>
-          <Id>2</Id>
-          <Width>493</Width>
-          <Height>50</Height>
-          <PosY>-6</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <LabelStyle StyleId="Fluid40 White" />
-          <LabelText>#Rockstar.SelectedTrack.AlbumName+ | +#Rockstar.CurrentModule</LabelText>
-          <LabelTextAlignment>Right</LabelTextAlignment>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
-          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
-        </Control>
-      </GroupControls>
-    </Control>
-    <Control x:type="Group">
       <Name>Time / Weather</Name>
-      <Id>4</Id>
-      <Width>1280</Width>
+      <Id>26</Id>
+      <Width>1024</Width>
       <Height>100</Height>
       <VisibleCondition />
       <Animations />
@@ -194,7 +158,7 @@
       <GroupControls>
         <Control x:type="Image">
           <Name>Clock BG</Name>
-          <Id>5</Id>
+          <Id>27</Id>
           <Width>297</Width>
           <Height>72</Height>
           <VisibleCondition />
@@ -207,10 +171,10 @@
         </Control>
         <Control x:type="Label">
           <Name>Time</Name>
-          <Id>6</Id>
-          <Width>188</Width>
+          <Id>28</Id>
+          <Width>202</Width>
           <Height>70</Height>
-          <PosX>96</PosX>
+          <PosX>82</PosX>
           <PosY>-4</PosY>
           <VisibleCondition />
           <Animations />
@@ -224,10 +188,10 @@
         </Control>
         <Control x:type="Image">
           <Name>WorldWeatherBG</Name>
-          <Id>7</Id>
+          <Id>29</Id>
           <Width>306</Width>
           <Height>76</Height>
-          <PosX>975</PosX>
+          <PosX>715</PosX>
           <VisibleCondition>IsPluginEnabled(World Weather)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
@@ -239,12 +203,12 @@
         </Control>
         <Control x:type="Image">
           <Name>Weather Icon Today</Name>
-          <Id>8</Id>
+          <Id>30</Id>
           <Width>51</Width>
           <Height>43</Height>
-          <PosX>1003</PosX>
+          <PosX>735</PosX>
           <PosY>17</PosY>
-          <VisibleCondition>IsControlVisible(7)</VisibleCondition>
+          <VisibleCondition>IsControlVisible(4)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -255,12 +219,12 @@
         </Control>
         <Control x:type="Label">
           <Name>Current Temp</Name>
-          <Id>9</Id>
+          <Id>31</Id>
           <Width>196</Width>
           <Height>50</Height>
-          <PosX>1069</PosX>
+          <PosX>800</PosX>
           <PosY>11</PosY>
-          <VisibleCondition>IsControlVisible(7)</VisibleCondition>
+          <VisibleCondition>IsControlVisible(4)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -273,7 +237,7 @@
         </Control>
         <Control x:type="Image">
           <Name>Rec</Name>
-          <Id>26</Id>
+          <Id>32</Id>
           <Width>60</Width>
           <Height>60</Height>
           <PosX>7</PosX>
@@ -292,10 +256,43 @@
         </Control>
       </GroupControls>
     </Control>
+    <Control x:type="Group">
+      <Name>UpperBar</Name>
+      <Id>1</Id>
+      <Width>425</Width>
+      <Height>58</Height>
+      <PosX>290</PosX>
+      <PosY>6</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <GroupStyle>
+        <BackgroundBrush x:type="ImageBrush" Image="\tvtitlebg.png" Stretch="Fill" />
+        <BorderBrush />
+        <GlossBrush />
+      </GroupStyle>
+      <GroupControls>
+        <Control x:type="Label">
+          <Name>Window</Name>
+          <Id>2</Id>
+          <Width>410</Width>
+          <Height>50</Height>
+          <PosY>-3</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="Fluid40 White" />
+          <LabelText>#Rockstar.SelectedTrack.AlbumName+ | +#Rockstar.CurrentModule</LabelText>
+          <LabelTextAlignment>Right</LabelTextAlignment>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+      </GroupControls>
+    </Control>
     <Control x:type="Button">
       <Name>Menu</Name>
       <Id>25</Id>
-      <Width>1280</Width>
+      <Width>1024</Width>
       <Height>100</Height>
       <VisibleCondition>IsPlayer(None)</VisibleCondition>
       <IsWindowOpenVisible>false</IsWindowOpenVisible>

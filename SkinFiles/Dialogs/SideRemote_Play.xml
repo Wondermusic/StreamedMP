@@ -29,10 +29,7 @@
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
-      <GroupStyle>
-        <BorderThickness>0,0,0,0</BorderThickness>
-        <CornerRadius>0,0,0,0</CornerRadius>
-      </GroupStyle>
+      <GroupStyle />
       <GroupControls>
         <Control x:type="Group">
           <Name>NewGroup</Name>
@@ -42,10 +39,7 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <GroupStyle>
-            <BorderThickness>0,0,0,0</BorderThickness>
-            <CornerRadius>0,0,0,0</CornerRadius>
-          </GroupStyle>
+          <GroupStyle />
           <GroupControls>
             <Control x:type="Image">
               <Name>NewImage</Name>
@@ -228,7 +222,6 @@
       <Animations />
       <MediaPortalFocusControls />
       <GroupStyle>
-        <BorderThickness>0,0,0,0</BorderThickness>
         <CornerRadius>12,12,12,12</CornerRadius>
         <BackgroundBrush x:type="ColorBrush" Color="#FF000000" />
       </GroupStyle>
@@ -573,6 +566,46 @@
       <LabelText>Ch. Down</LabelText>
       <Actions>
         <Action Action="MediaPortalAction" Param="ACTION_PREV_CHANNEL" />
+      </Actions>
+    </Control>
+    <Control x:type="Button">
+      <Name>Close</Name>
+      <Id>21</Id>
+      <Width>80</Width>
+      <Height>80</Height>
+      <PosX>424</PosX>
+      <PosY>260</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <EnableLabel>false</EnableLabel>
+        <EnableImage>true</EnableImage>
+      </ButtonStyle>
+      <Image>\Remote\top_exit_disabled.png</Image>
+      <LabelText>NewButton</LabelText>
+      <Actions>
+        <Action Action="OpenDialog" Param="903" />
+      </Actions>
+    </Control>
+    <Control x:type="Button">
+      <Name>Back</Name>
+      <Id>22</Id>
+      <Width>80</Width>
+      <Height>80</Height>
+      <PosX>10</PosX>
+      <PosY>260</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <EnableLabel>false</EnableLabel>
+        <EnableImage>true</EnableImage>
+      </ButtonStyle>
+      <Image>\Remote\back_disabled.png</Image>
+      <LabelText>NewButton</LabelText>
+      <Actions>
+        <Action Action="MediaPortalAction" Param="ACTION_PREVIOUS_MENU" />
       </Actions>
     </Control>
   </DialogControls>
