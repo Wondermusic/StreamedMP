@@ -308,7 +308,7 @@
           <Width>410</Width>
           <Height>50</Height>
           <PosY>-3</PosY>
-          <VisibleCondition>!IsPlayer(mvCentral)</VisibleCondition>
+          <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <LabelStyle StyleId="Fluid40 White" />

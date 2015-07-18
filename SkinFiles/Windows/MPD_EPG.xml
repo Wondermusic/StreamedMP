@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Window xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="PlayerWindow">
+<Window xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="MPDisplayWindow">
   <IsDefault>false</IsDefault>
   <Width>1024</Width>
   <Height>768</Height>
-  <Name>RadioPlaying</Name>
-  <Id>29</Id>
+  <Name>MPD_EPG</Name>
+  <Id>9999</Id>
   <BackgroundBrush />
   <WindowAnimations />
   <WindowControls>
     <Control x:type="Image">
-      <Name>Image</Name>
-      <Id>14</Id>
+      <Name>Hovers</Name>
+      <Id>1</Id>
       <Width>1366</Width>
       <Height>768</Height>
       <PosX>-150</PosX>
@@ -18,93 +18,33 @@
       <Animations />
       <MediaPortalFocusControls />
       <ImageStyle StyleId="Logo_Image" />
-      <Image>\Hovers\hover_my radio.jpg</Image>
+      <Image>\Hovers\hover_my tv.jpg</Image>
       <ImageStretch>Fill</ImageStretch>
-      <CoverImage x:type="ImageBrush" Image="\fanartoverlay.png" Stretch="Fill" />
+      <CoverImage x:type="ImageBrush" Image="\tvviewbg.png" Stretch="Fill" />
       <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
     </Control>
-    <Control x:type="Group">
-      <Name>Radio</Name>
-      <Id>15</Id>
+    <Control x:type="Guide">
+      <Name>NewGuide</Name>
+      <Id>2</Id>
       <Width>1024</Width>
-      <Height>768</Height>
+      <Height>631</Height>
+      <PosY>75</PosY>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
-      <GroupStyle StyleId="Empty" />
-      <GroupControls>
-        <Control x:type="Group">
-          <Name>Playing Window</Name>
-          <Id>16</Id>
-          <Width>1024</Width>
-          <Height>268</Height>
-          <PosY>462</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <GroupStyle>
-            <BackgroundBrush x:type="ImageBrush" Image="\dialogprogressbg.png" Stretch="Fill" />
-            <BorderBrush />
-            <GlossBrush />
-          </GroupStyle>
-          <GroupControls>
-            <Control x:type="Image">
-              <Name>thumb</Name>
-              <Id>17</Id>
-              <Width>200</Width>
-              <Height>200</Height>
-              <PosX>21</PosX>
-              <PosY>35</PosY>
-              <VisibleCondition />
-              <Animations />
-              <MediaPortalFocusControls />
-              <ImageStyle StyleId="Logo_Image" />
-              <Image>#Play.Current.Thumb</Image>
-              <DefaultImage>\missing_coverart2.png</DefaultImage>
-              <ImageStretch>Fill</ImageStretch>
-              <ImageCornerRadius>10</ImageCornerRadius>
-              <CoverImage />
-              <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
-            </Control>
-            <Control x:type="Label">
-              <Name>Title</Name>
-              <Id>18</Id>
-              <Width>770</Width>
-              <Height>60</Height>
-              <PosX>227</PosX>
-              <PosY>30</PosY>
-              <VisibleCondition />
-              <Animations />
-              <MediaPortalFocusControls />
-              <LabelStyle StyleId="FluidTitle50 White" />
-              <LabelText>#MPD2.Radio.Title</LabelText>
-              <ScrollDelay>2</ScrollDelay>
-              <ScrollSpeed>10</ScrollSpeed>
-              <ScrollSeperator>   |   </ScrollSeperator>
-            </Control>
-            <Control x:type="Label">
-              <Name>Playtime</Name>
-              <Id>19</Id>
-              <Width>391</Width>
-              <Height>60</Height>
-              <PosX>229</PosX>
-              <PosY>100</PosY>
-              <VisibleCondition />
-              <Animations />
-              <MediaPortalFocusControls />
-              <LabelStyle StyleId="FluidBody50 White" />
-              <LabelText>#currentplaytime</LabelText>
-              <IsScrollingEnabled>false</IsScrollingEnabled>
-              <ScrollSpeed>2</ScrollSpeed>
-              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
-            </Control>
-          </GroupControls>
-        </Control>
-      </GroupControls>
+      <GuideStyle StyleId="GuideStyle">
+        <TimelineMarkerThickness>0</TimelineMarkerThickness>
+      </GuideStyle>
+      <ChannelListWidth>330</ChannelListWidth>
+      <GuideItemHeight>59</GuideItemHeight>
+      <ChannelStyle StyleId="GuideChannelStyle" />
+      <ProgramStyle StyleId="GuideProgramStyle" />
+      <CreateDialogId>2000</CreateDialogId>
+      <CancelDialogId>2001</CancelDialogId>
     </Control>
     <Control x:type="Group">
       <Name>UpperBar</Name>
-      <Id>5</Id>
+      <Id>3</Id>
       <Width>425</Width>
       <Height>58</Height>
       <PosX>290</PosX>
@@ -120,14 +60,14 @@
       <GroupControls>
         <Control x:type="Label">
           <Name>Window</Name>
-          <Id>6</Id>
+          <Id>4</Id>
           <Width>410</Width>
           <Height>50</Height>
-          <VisibleCondition>!IsPlayer(Rockstar)</VisibleCondition>
+          <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <LabelStyle StyleId="FluidBody40 White" />
-          <LabelText>#currentmodule</LabelText>
+          <LabelText>MPDisplay EPG</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -137,7 +77,7 @@
     </Control>
     <Control x:type="Group">
       <Name>Time / Weather</Name>
-      <Id>21</Id>
+      <Id>5</Id>
       <Width>1024</Width>
       <Height>100</Height>
       <VisibleCondition />
@@ -147,7 +87,7 @@
       <GroupControls>
         <Control x:type="Image">
           <Name>Clock BG</Name>
-          <Id>22</Id>
+          <Id>6</Id>
           <Width>297</Width>
           <Height>72</Height>
           <VisibleCondition />
@@ -160,7 +100,7 @@
         </Control>
         <Control x:type="Label">
           <Name>Time</Name>
-          <Id>23</Id>
+          <Id>7</Id>
           <Width>202</Width>
           <Height>70</Height>
           <PosX>82</PosX>
@@ -177,7 +117,7 @@
         </Control>
         <Control x:type="Image">
           <Name>WorldWeatherBG</Name>
-          <Id>24</Id>
+          <Id>8</Id>
           <Width>306</Width>
           <Height>76</Height>
           <PosX>715</PosX>
@@ -192,7 +132,7 @@
         </Control>
         <Control x:type="Image">
           <Name>Weather Icon Today</Name>
-          <Id>25</Id>
+          <Id>9</Id>
           <Width>51</Width>
           <Height>43</Height>
           <PosX>735</PosX>
@@ -208,7 +148,7 @@
         </Control>
         <Control x:type="Label">
           <Name>Current Temp</Name>
-          <Id>26</Id>
+          <Id>10</Id>
           <Width>196</Width>
           <Height>50</Height>
           <PosX>800</PosX>
@@ -224,41 +164,26 @@
           <ScrollSpeed>2</ScrollSpeed>
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
         </Control>
-        <Control x:type="Image">
-          <Name>Rec</Name>
-          <Id>27</Id>
-          <Width>60</Width>
-          <Height>60</Height>
-          <PosX>7</PosX>
-          <PosY>3</PosY>
-          <VisibleCondition>IsTvRecording</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
-          <Animations>
-            <Animation x:type="Fade" Condition="VisibleTrue" Duration="2000" Reverse="true" Repeat="100000" From="20" />
-            <Animation x:type="Fade" Condition="VisibleFalse" Duration="2000" From="100" To="0" />
-          </Animations>
+        <Control x:type="Button">
+          <Name>NewButton</Name>
+          <Id>11</Id>
+          <Width>80</Width>
+          <Height>70</Height>
+          <VisibleCondition />
+          <Animations />
           <MediaPortalFocusControls />
-          <ImageStyle StyleId="Logo_Image" />
-          <Image>\tvguide_record_button.png</Image>
-          <ImageStretch>Fill</ImageStretch>
-          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+          <ButtonStyle>
+            <EnableLabel>false</EnableLabel>
+            <EnableImage>true</EnableImage>
+          </ButtonStyle>
+          <Image>\Settings\left_f.png</Image>
+          <LabelText>NewButton</LabelText>
+          <Actions>
+            <Action Action="CloseWindow" />
+          </Actions>
         </Control>
       </GroupControls>
     </Control>
-    <Control x:type="Button">
-      <Name>PlayMenu</Name>
-      <Id>13</Id>
-      <Width>1024</Width>
-      <Height>100</Height>
-      <VisibleCondition />
-      <Animations />
-      <MediaPortalFocusControls />
-      <ButtonStyle StyleId="None2" />
-      <LabelText>NewButton</LabelText>
-      <Actions>
-        <Action Action="OpenDialog" Param="904" />
-      </Actions>
-    </Control>
   </WindowControls>
-  <VisibleCondition>IsPlayer(IsRadio) || IsPlayer(Streamradio)</VisibleCondition>
+  <AutoCloseWindow>false</AutoCloseWindow>
 </Window>

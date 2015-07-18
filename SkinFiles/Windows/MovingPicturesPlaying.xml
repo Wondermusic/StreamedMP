@@ -255,7 +255,7 @@
           <Id>24</Id>
           <Width>410</Width>
           <Height>50</Height>
-          <VisibleCondition>IsControlVisible(9)</VisibleCondition>
+          <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <LabelStyle StyleId="FluidBody40 White" />

@@ -203,7 +203,7 @@
           <Id>14</Id>
           <Width>410</Width>
           <Height>50</Height>
-          <VisibleCondition>!IsPlayer(mvCentral)</VisibleCondition>
+          <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <LabelStyle StyleId="FluidBody40 White" />

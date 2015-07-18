@@ -128,7 +128,7 @@
           <Id>8</Id>
           <Width>410</Width>
           <Height>50</Height>
-          <VisibleCondition>IsControlVisible(9) || !IsPlayer(Rockstar)</VisibleCondition>
+          <VisibleCondition>!IsPlayer(Rockstar)</VisibleCondition>
           <Animations />
           <MediaPortalFocusControls />
           <LabelStyle StyleId="FluidBody40 White" />
@@ -265,5 +265,5 @@
       </Actions>
     </Control>
   </WindowControls>
-  <VisibleCondition>IsPlayer(RadioTime)</VisibleCondition>
+  <VisibleCondition>IsPlayer(TuneIn)</VisibleCondition>
 </Window>
