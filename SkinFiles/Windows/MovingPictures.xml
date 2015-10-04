@@ -242,9 +242,9 @@
               <ListControlStyle StyleId="empty" />
               <ListType>MediaPortalListControl</ListType>
               <ListLayout>Auto</ListLayout>
-              <VerticalItemStyle StyleId="Empty ListStyle" />
-              <VerticalIconItemStyle StyleId="Empty ListStyle" />
-              <HorizontalItemStyle StyleId="Empty ListStyle" />
+              <VerticalItemStyle />
+              <VerticalIconItemStyle />
+              <HorizontalItemStyle />
               <CoverFlowItemStyle StyleId="MovPic CoverFlow" />
             </Control>
             <Control x:type="Image">

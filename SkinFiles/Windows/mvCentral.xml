@@ -81,7 +81,7 @@
           <ListType>MediaPortalListControl</ListType>
           <ListLayout>Auto</ListLayout>
           <VerticalItemStyle StyleId="Vertical low" />
-          <VerticalIconItemStyle StyleId="Empty ListStyle" />
+          <VerticalIconItemStyle />
           <HorizontalItemStyle StyleId="Horizontal low" />
           <CoverFlowItemStyle StyleId="Coverflow low" />
         </Control>

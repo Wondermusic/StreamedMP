@@ -344,9 +344,9 @@
             <Width>310</Width>
             <Height>59</Height>
           </VerticalItemStyle>
-          <VerticalIconItemStyle StyleId="Empty ListStyle" />
-          <HorizontalItemStyle StyleId="Empty ListStyle" />
-          <CoverFlowItemStyle StyleId="Empty ListStyle" />
+          <VerticalIconItemStyle />
+          <HorizontalItemStyle />
+          <CoverFlowItemStyle />
         </Control>
       </GroupControls>
     </Control>

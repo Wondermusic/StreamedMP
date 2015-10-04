@@ -347,6 +347,24 @@
       <IsInternal>false</IsInternal>
     </XmlProperty>
     <XmlProperty>
+      <SkinTag>#fanarthandler.picture.backdrop.selected</SkinTag>
+      <PropertyType>Image</PropertyType>
+      <DesignerValue>New....</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#fanarthandler.picture.backdrop.selected" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#Picture.Slideshow.Thumb</SkinTag>
+      <PropertyType>Image</PropertyType>
+      <DesignerValue>New....</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#Picture.Slideshow.Thumb" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
       <SkinTag>#percentage</SkinTag>
       <PropertyType>Number</PropertyType>
       <DesignerValue>25</DesignerValue>
@@ -2484,6 +2502,186 @@
       <DesignerValue>N,51.277431,E,7.262493</DesignerValue>
       <MediaPortalTags>
         <XmlMediaPortalTag Tag="#Picture.Exif.MapData" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#StreamedMP.NowPlayingPreview</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>npstyle1</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#StreamedMP.NowPlayingPreview" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#defaultrate</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>NTSC</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#defaultrate" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#name</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>cinema24</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#name" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#fps</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>25</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#fps" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#rate</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>50</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#rate" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#homeScreen</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>classic and basic, prefer basic</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#homeScreen" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#thumbScreen</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>kleine bildschirme</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#thumbScreen" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#displayTimeout</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>0</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#displayTimeout" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#zapDelay</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>3 Sek</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#zapDelay" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#zapTimeout</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>4 Sek</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#zapTimeout" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#timeoutValue</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>1500</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#timeoutValue" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#skipValue</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>10</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#skipValue" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#videosPlaylist</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>C:\test</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#videosPlaylist" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#folderName</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>(E:) CD/DVD</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#folderName" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#folder</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>E:\</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#folder" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#createThumb</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>nein</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#createThumb" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#musicPlaylist</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>c:\</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#musicPlaylist" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#vumeter</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>Analog</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#vumeter" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#scanstatus</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>1000</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#scanstatus" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#updatesincelastimprot</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>only update files after</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#updatesincelastimprot" />
       </MediaPortalTags>
       <IsInternal>false</IsInternal>
     </XmlProperty>

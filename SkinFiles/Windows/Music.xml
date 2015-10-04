@@ -70,7 +70,7 @@
           <ListType>MediaPortalListControl</ListType>
           <ListLayout>Auto</ListLayout>
           <VerticalItemStyle StyleId="Music Vertical" />
-          <VerticalIconItemStyle StyleId="Empty ListStyle" />
+          <VerticalIconItemStyle />
           <HorizontalItemStyle StyleId="Pictures Horizontal" />
           <CoverFlowItemStyle StyleId="Music CoverFlow" />
         </Control>

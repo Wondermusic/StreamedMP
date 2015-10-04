@@ -282,7 +282,7 @@
           <ListType>MediaPortalListControl</ListType>
           <ListLayout>Auto</ListLayout>
           <VerticalItemStyle StyleId="Vertical high" />
-          <VerticalIconItemStyle StyleId="Empty ListStyle" />
+          <VerticalIconItemStyle />
           <HorizontalItemStyle StyleId="Horizontal high" />
           <CoverFlowItemStyle StyleId="CoverFlow high" />
         </Control>
@@ -554,9 +554,9 @@
           <ListType>MediaPortalMenuControl</ListType>
           <ListLayout>Vertical</ListLayout>
           <VerticalItemStyle StyleId="ActionMenu" />
-          <VerticalIconItemStyle StyleId="Empty ListStyle" />
-          <HorizontalItemStyle StyleId="Empty ListStyle" />
-          <CoverFlowItemStyle StyleId="Empty ListStyle" />
+          <VerticalIconItemStyle />
+          <HorizontalItemStyle />
+          <CoverFlowItemStyle />
         </Control>
       </GroupControls>
     </Control>
